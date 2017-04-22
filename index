@@ -4,22 +4,22 @@
 
 <HEAD>
 <TITLE>Fireball-qmd</TITLE>
-<LINK REL="STYLESHEET" HREF="css">
+<LINK REL="STYLESHEET" HREF="css"></LINK>
 </HEAD>
 
 <BODY>
 
 <div id="masthead" class="header-box" style="background-color: #edede1;">
-<div class="header-bg" style="background-image: url(&quot;fondo.png&quot;); bottom: -18.3333px;">
+<div class="header-bg" style="background-image: url(&quot;fondo-qmd.png&quot;); bottom: -18.3333px;">
 <div class="header-inner" style="padding: 2rem 0 2rem 0;">
-<div class="site-info fade-logo" style="background-color: rgb(237, 237, 225); opacity: 0.78;">
-<h1 class="site-title" style="font-size: 3.00rem;">
+<div class="site-info fade-logo" style="background-color: rgba(237, 237, 225, 0);">
+<h1 class="site-title" style="font-size: 3.00rem; text-align: center;">
 <a style="color: #560500;" href="index.html" title="FAST (First-principles Atomistic Simulation Techniques)" rel="home">FAST</a>
 </h1>
-<h3 class="site-tagline" style="font-size: 1.375rem; color: #8e6b6b;">(First-principles Atomistic Simulation Techniques)</h3>
+<h3 class="site-tagline" style="font-size: 1.375rem; color: #8e6b6b;text-align: center">(First-principles Atomistic Simulation Techniques)</h3>
+</div>
 </div>
 </div>								
-</div>
 </div>
 
 <div class="navigation clearfix" style="background-color: #de491a;">
@@ -45,7 +45,7 @@
 
 
 
-<H1 class="entry-title">Fireball</h1>
+<h1 class="entry-title">Fireball</h1>
 <p>FIREBALL is a local-orbital DFT implementation of molecular dynamics. The method allows for the simulation and calculation of very large supercells of thousands of atoms or very long MD simulations with ease.</p>
 <ul>
 <li><a href="http://fireball.ftmc.uam.es/moodle/course/view.php?id=8">Open course </a>(guest access, tutorials, <strong>static executables</strong>, etc &#8230; )</li>
@@ -130,8 +130,9 @@ From here you can download some tested waves functions and pseudopotentials :
 <TD></TD>
 <TD>Al</TD>
 <TD>Si</TD>
+</TR>
 
-</TD>
+<TR>
 <TD>P</TD>
 <TD>S</TD>
 <TD>Cl</TD>
@@ -163,8 +164,9 @@ From here you can download some tested waves functions and pseudopotentials :
 <TD>Rb</TD>
 <TD>Sr</TD>
 <TD>Y</TD>
+</TR>
 
-</TD>
+<TR>
 <TD>Zr</TD>
 <TD>Nb</TD>
 <TD>Mo</TD>
@@ -273,7 +275,7 @@ From here you can download some tested waves functions and pseudopotentials :
 <TD></TD>
 </TR>
 
-</TABLE>
+</table>
 
 
 
