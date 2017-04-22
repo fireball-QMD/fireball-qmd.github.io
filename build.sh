@@ -16,8 +16,9 @@ do
 done
 mv i index.html
 
-head -44 index > members.html
-head -44 index > fireballamber.html
+head -$(($(grep -n entry-title index | grep Fireball | cut -d':' -f1)-1)) index > members.html
+head -$(($(grep -n entry-title index | grep Fireball | cut -d':' -f1)-1)) index > fireballamber.html
+
 
 cat members >> members.html
 cat fireballamber >> fireballamber.html

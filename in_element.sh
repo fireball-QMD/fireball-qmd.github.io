@@ -7,7 +7,15 @@ echo '<!DOCTYPE HTML>
 echo $1 >> index.html
 
 echo '</TITLE>
-<LINK REL="STYLESHEET" HREF="../css">
+
+<style>
+body {
+font-family:"Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
+background-color: #edede1;
+color: #767676;
+line-height: 1.6;
+}
+</style>
 </HEAD>
 
 <BODY>
@@ -16,11 +24,11 @@ echo '</TITLE>
 for i in *tar.gz 
 do 
 tar -xvf $i
-echo '<H1><A HREF="'$i  >> index.html
+echo '<H2><A HREF="'$i  >> index.html
 echo '">' >> index.html
 echo ${i::-7} >> index.html
 echo '</A>
-</H1>
+</H2>
 <ul>
 ' >> index.html
 
