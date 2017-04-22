@@ -100,6 +100,32 @@ pre.code {
 code {
 	font-size:120%;
 }
+
+.navmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navmenu li {
+    float: left;
+}
+
+.navmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navmenu li a:hover {
+    background-color: #111;
+}
+
+
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
@@ -143,35 +169,8 @@ h4, h5, h6 {
 }
 
 
-
-
-
 /* Menus - Primary Navigation */
 
-
-.navmenu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navmenu li {
-    float: left;
-}
-
-.navmenu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navmenu li a:hover {
-    background-color: #111;
-}
 
 	.primary-navigation .menu-toggle {
 		display: none;
