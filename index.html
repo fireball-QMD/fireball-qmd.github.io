@@ -4,7 +4,193 @@
 
 <HEAD>
 <TITLE>Fireball-qmd</TITLE>
-<LINK REL="STYLESHEET" HREF="css"></LINK>
+<style>
+  table, th, td {
+    border-collapse: collapse;
+    border:0px solid black;
+    background-color: #f1f1c1;
+}
+th, td {
+    padding: 7px;
+    text-align: center;
+}
+
+body {
+	font-family:"Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
+	background-color: #edede1;
+	color: #767676;
+  	line-height: 1.6;
+}
+
+
+#masthead {
+	background-color: #fff;
+}
+.header-box { 
+	overflow-y: hidden;
+}
+
+.header-bg {
+	padding: 2rem 0;
+	background: no-repeat center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.header-inner { position: relative; z-index: 2; text-align: center; }
+
+.logo { display: inline-block; }
+
+.logo a,
+.logo img { display: block; }
+.logo img {
+   width:100%;
+}
+.logo img {
+	max-height: 250px;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.site-info {
+	display: inline-block;
+	padding: 15px 30px;
+	background: #fff;
+}
+
+.site-title { 
+	width: 10%; 
+	text-align: center; 
+	font-family: times, 'times new roman', sans-serif;
+	margin: 0;
+	font-size: 2.75rem;
+}
+
+.site-title a {
+	color: #AFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center; 
+
+}
+
+.site-tagline:before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: rgba(255,255,255,0.1);
+	margin: 10px auto;
+}
+
+.site-tagline {
+	font-family: "open sans",arial, sans-serif;
+	font-size: 1.375rem;
+	text-align: center;
+	color: rgba(255,255,255,0.4);
+	font-weight: 300;
+	margin: 0;
+}
+
+pre.code {
+        font:"Courier";
+	font-size:10pt;
+	padding:0.5em;
+	border:1px dashed #000;
+	color:Black;
+	overflow:visible;
+        background-color: #f7f9fa;
+}
+code {
+	font-size:120%;
+}
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	clear: both;
+	font-family: times, "times new roman", serif;
+	font-weight: 400;
+	line-height: 1;
+	color: #4c4c4c;
+}
+h1 {font-size: 1.750rem;}
+h2 {font-size: 1.625rem;}
+h3 {font-size: 1.438rem;}
+h4 {font-size: 1.25rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: 0.875rem;}
+
+h4, h5, h6 {
+	margin-bottom: 0.5rem;
+}
+
+.entry-title::after {
+    content: "";
+    height: 6px;
+    width: 20%;
+    background-color: #789993;
+    display: block;
+    height: 8px;
+    margin: 10px 0;
+}
+
+::selection {
+  background: #789993;
+  color: #fff;
+}
+::-moz-selection {
+  background: #789993;
+  color: #fff;
+}
+
+
+/* Menus - Primary Navigation */
+
+
+	.primary-navigation .menu-toggle {
+		display: none;
+	}
+	.site-navigation ul {
+		list-style: none;
+		margin: 0;
+		padding:0;
+		text-align: center;	
+		font-size: 1rem;
+		text-transform: uppercase;
+	}	
+	.primary-navigation ul.nav-menu {
+		display: block;
+	}	
+	.site-navigation a {
+		color: #595a67;
+		display: block;
+		text-transform: normal;
+		text-decoration: none;
+	}
+
+	.primary-navigation li {
+		border: 0;
+		display: inline-block;
+		height: 3.188rem;
+		line-height: 3.188rem;
+		position: relative;
+		text-align: left;
+	}
+	.primary-navigation li a {
+		display: inline-block;
+		padding: 0 0.75rem;
+		white-space: nowrap;
+		color: #fff;
+	}	
+	
+  </style>
 </HEAD>
 
 <BODY>
@@ -22,6 +208,29 @@
 </div>								
 </div>
 
+  <div class="navigation clearfix" style="background-color: #de491a;">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div id="navbar" class="navbar">
+<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+<div class="toggle-container visible-xs visible-sm hidden-md hidden-lg" style="background-color: #de491a;">
+<button class="menu-toggle">Menu</button></div>
+<ul> <id="menu-members" class="nav-menu">
+<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="index.html">Fireball</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="fireballamber.html">Fireball &amp; Amber</a></li>
+<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="members.html">Members</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  
+  
+  
 <div id="menu" class="navmenu">
 <nav>
 <ul> 
