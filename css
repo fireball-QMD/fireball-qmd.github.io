@@ -100,7 +100,9 @@ pre.code {
 code {
 	font-size:120%;
 }
-
+#navmenu {
+	background-color: #fff;
+}
 .navmenu ul {
     list-style-type: none;
     margin: 0;
