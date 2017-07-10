@@ -1,0 +1,7 @@
+Functional : LDA Ceperley/Alder Perdew/Zunger (1980)
+orbitals : spd
+Autor :  D. G. Trabada
+method : charge ns_125_rs_600_np_125_rp_600_nd000_nd_600
+E_min = -215.857 eV
+a(dia) = 5.70
+Bulk modulus = 87.1 Gpa
