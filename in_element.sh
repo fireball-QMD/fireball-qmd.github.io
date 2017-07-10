@@ -21,32 +21,34 @@ line-height: 1.6;
 <BODY>
 ' >> index.html
 
+
 for i in *tar.gz 
 do 
 tar -xvf $i
 echo '<H2><A HREF="'$i  >> index.html
 echo '">' >> index.html
-echo ${i::-7} >> index.html
+ele=$(echo $i | cut -d'.' -f1)
+echo ${ele} >> index.html
 echo '</A>
 </H2>
 <ul>
 ' >> index.html
 
-n=$(wc -l  ${i::-7}/info | cut -d' ' -f1)
+n=$(wc -l  ${ele}/info | cut -d' ' -f1)
 for((j=1;j<=$n;j++))
 do 
-l=$(head -$j ${i::-7}/info | tail -1)
+l=$(head -$j ${ele}/info | tail -1)
 if [ ${#l} -gt 0 ]
 then
  echo '<li>' $l' </li>' >>  index.html
 fi
 done
 
-rm -fr ${i::-7}
+rm -fr ${ele}
 
-if test -d  ${i::-7}.more
+if test -d  ${ele}.more
 then
-echo '<li><A HREF="'${i::-7}'.more/index.html' >> index.html
+echo '<li><A HREF="'${ele}'.more/index.html' >> index.html
 echo '">read more</A></li>' >> index.html
 
 fi
