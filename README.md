@@ -8,10 +8,8 @@ Update the database:
 git clone https://github.com/fireball-QMD/fireball-qmd.github.io
 
 if exist the folder of the element (for example C):
-
   cd C
-  
-  cp -r C_XX.tar.gz #XX is the next index
+    cp -r C_XX.tar.gz #XX is the next index
   
   #put the wavefunctions and the pseudopotential inside of C_XX.tar.gz
   
