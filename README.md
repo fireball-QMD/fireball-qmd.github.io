@@ -13,15 +13,11 @@ git clone https://github.com/fireball-QMD/fireball-qmd.github.io
 
 if exist the folder of the element (for example C):
 
-  cd C
-  
+    cd C
     cp -r C_XX.tar.gz #XX is the next index
-    
-  #put the wavefunctions and the pseudopotential inside of C_XX.tar.gz
-  
-  #the file info will be show in the web page
-  
-  cd ..
+    #put the wavefunctions and the pseudopotential inside of C_XX.tar.gz
+    #the file info will be show in the web page
+    cd ..
   
   ./build.sh #to redo the page
   
