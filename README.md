@@ -9,7 +9,7 @@ https://fireball-qmd.github.io/
 
 Update the database:
 
-git clone https://github.com/fireball-QMD/fireball-qmd.github.io
+    git clone https://github.com/fireball-QMD/fireball-qmd.github.io
 
     if exist the folder of the element (for example C):
       cd C
