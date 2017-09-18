@@ -3,6 +3,10 @@ git clone https://github.com/fireball-QMD/fireball-qmd.github.io
 
 https://fireball-qmd.github.io/
 
+
+
+
+
 Update the database:
 
 git clone https://github.com/fireball-QMD/fireball-qmd.github.io
@@ -16,9 +20,13 @@ if exist the folder of the element (for example C):
   #put the wavefunctions and the pseudopotential inside of C_XX.tar.gz
   
   #the file info will be show in the web page
+  
   cd ..
+  
   ./build.sh #to redo the page
+  
   #if you want show more information then
+  
   cd C
   
   cp -r path/C_XX.more .  #index.html will be load as normal html page
