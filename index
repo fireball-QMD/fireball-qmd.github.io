@@ -11,7 +11,7 @@
     background-color: #f1f1c1;
 }
 th, td {
-    padding: 7px;
+    padding: 6px;
     text-align: center;
 }
 
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	clear: both;
 	font-family: times, "times new roman", serif;
-	font-weight: 400;
+	font-weight: 200;
 	line-height: 1;
 	color: #4c4c4c;
 }
@@ -199,10 +199,10 @@ h4, h5, h6 {
 <div class="header-bg" style="background-image: url(&quot;fondo-qmd.png&quot;); bottom: -18.3333px;">
 <div class="header-inner" style="padding: 2rem 0 2rem 0;">
 <div class="site-info fade-logo" style="background-color: rgba(237, 237, 225, 0);">
-<h1 class="site-title" style="font-size: 3.00rem; text-align: center;">
-<a style="color: #560500;" href="index.html" title="FAST (First-principles Atomistic Simulation Techniques)" rel="home">FAST</a>
+<h1 class="site-title" style="font-size: 2.50rem; text-align: center;">
+<a style="color: #560500;" href="index.html" title="Fireball-qmd (quantum molecular dynamecs)" rel="home">Fireball&ndash;qmd</a>
 </h1>
-<h3 class="site-tagline" style="font-size: 1.375rem; color: #8e6b6b;text-align: center">(First-principles Atomistic Simulation Techniques)</h3>
+<h3 class="site-tagline" style="font-size: 1.375rem; color: #8e6b6b;text-align: center">(quantum molecular dynamics)</h3>
 </div>
 </div>
 </div>								
@@ -219,7 +219,8 @@ h4, h5, h6 {
 <ul> <id="menu-members" class="nav-menu">
 <li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="index.html">Fireball</a></li>
 <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="fireballamber.html">Fireball &amp; Amber</a></li>
-<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="members.html">Members</a></li>
+<!-- <li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="members.html">Members</a></li> -->
+
 <id>
 </ul>
 </div>
