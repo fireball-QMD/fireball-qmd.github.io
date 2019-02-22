@@ -30,7 +30,6 @@ ele=$(echo $i | sed 's/.optimized./ /g')
 echo ${ele} >> index.html
 echo '</A>
 </H2>
-<ul>
 ' >> index.html
 done
 
