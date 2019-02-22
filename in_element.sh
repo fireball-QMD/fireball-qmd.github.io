@@ -22,6 +22,19 @@ line-height: 1.6;
 ' >> index.html
 
 
+for i in *optimized*
+do
+echo '<H2><A HREF="'$i  >> index.html
+echo '">' >> index.html
+ele=$(echo $i | sed 's/.optimized./ /g')
+echo ${ele} >> index.html
+echo '</A>
+</H2>
+<ul>
+' >> index.html
+done
+
+
 for i in *tar.gz 
 do 
 tar -xvf $i
