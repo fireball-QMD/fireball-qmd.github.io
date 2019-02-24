@@ -31,6 +31,10 @@ echo ${ele} >> index.html
 echo '</A>
 </H2>
 ' >> index.html
+if test -f ${i}/info
+then
+cat ${i}/info >> index.html
+fi
 done
 
 
