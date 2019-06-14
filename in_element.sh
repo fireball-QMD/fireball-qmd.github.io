@@ -22,21 +22,6 @@ line-height: 1.6;
 ' >> index.html
 
 
-for i in *optimized*
-do
-echo '<H2><A HREF="'$i  >> index.html
-echo '">' >> index.html
-ele=$(echo $i | sed 's/.optimized./ /g')
-echo ${ele} >> index.html
-echo '</A>
-</H2>
-' >> index.html
-if test -f ${i}/info
-then
-cat ${i}/info >> index.html
-fi
-done
-
 
 for i in *tar.gz 
 do 
