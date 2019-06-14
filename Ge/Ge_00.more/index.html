@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Ge LDA Mulliken Ges100650p200650d000650</title>
+</head>
+<body>
+
+<h2>Ge</h2>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b></p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -107.9 eV/atom </b> in Fireball and <b>  -160.3415 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ge.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> dia </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Ges100650p200650d000650.dat>Fireball</a></p> <img src=ek_Ges100650p200650d000650.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Ge.pbe-n-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 6.5 (bohr), rd = 6.5 (bohr), and was generate like  qs = 1.0,  qp = 2.0,  qd = 0.0, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+<table style="
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  width: 50%;"    
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+>
+ <caption>Other basis</caption>
+  <tr>
+    <td>Base</td>
+    <td>Functional</td>
+    <td>Projection method</td>
+    <td>Crystal structure</td>
+    <td>Lattice parameter (&#8491;) </td>
+    <td>Bulk modulus (GPa)</td>
+  </tr>
+  <tr>
+    <td>Ges200550p200550d000550</td>
+    <td>LDA</td>
+    <td>NPA</td>
+    <td>dia</td>
+    <td>5.802</td>
+    <td>62</td>
+  </tr>
+   <tr>
+    <td>Ges200550p200550d000550</td>
+    <td>LDA</td>
+    <td>Lowdin</td>
+    <td>dia</td>
+    <td>5.652</td>
+    <td>64</td>
+  </tr>
+ <tr>
+    <td>Ges100650p200650d000650</td>
+    <td>LDA</td>
+    <td>Mulliken</td>
+    <td>dia</td>
+    <td>5.772</td>
+    <td>60</td>
+  </tr>
+ <tr>
+    <td>Ges200550p200550d000550</td>
+    <td>GGA</td>
+    <td>NPA</td>
+    <td>dia</td>
+    <td>5.773</td>
+    <td>57</td>
+  </tr>
+ <tr>
+    <td>Ges200500p200500d000500</td>
+    <td>GGA</td>
+    <td>Lowdin</td>
+    <td>dia</td>
+    <td>5.495</td>
+    <td>102</td>
+  </tr>
+ <tr>
+    <td>Ges100650p200650d000650</td>
+    <td>GGA</td>
+    <td>Mulliken</td>
+    <td>dia</td>
+    <td>5.815</td>
+    <td>59</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=032_Ge_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=032_Ge_LDA/032.pp>032.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=032_Ge_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=032_Ge_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=032_Ge_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=032_Ge_LDA/032.pp>032.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=032_Ge_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=032_Ge_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  
