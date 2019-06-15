@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Ti LDA Lowdin Tis050850p000850d150850</title>
+</head>
+<body>
+
+<h2>Ti</h2>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b>L&ouml;wdin</p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -95.34 eV/atom </b> in Fireball and <b>  -23233.2 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ti.pbe-spn-kjpaw_psl.1.0.0.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> fcc </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Tis050850p000850d150850.dat>Fireball</a></p> <img src=ek_Tis050850p000850d150850.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Ti.pbe-spn-kjpaw_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 8.5 (bohr), rp = 8.5 (bohr), rd = 8.5 (bohr), and was generate like  qs = 0.5,  qp = 0.0,  qd = 1.5, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+<table style="
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  width: 50%;"    
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+>
+ <caption>Other basis</caption>
+  <tr>
+    <td>Base</td>
+    <td>Functional</td>
+    <td>Projection method</td>
+    <td>Crystal structure</td>
+    <td>Lattice parameter (&#8491;) </td>
+    <td>Bulk modulus (GPa)</td>
+  </tr>
+  <tr>
+    <td>Tis200750p000750d100750</td>
+    <td>LDA</td>
+    <td>NPA</td>
+    <td>fcc</td>
+    <td>4.093</td>
+    <td>109</td>
+  </tr>
+   <tr>
+    <td>Tis200750p000750d050750</td>
+    <td>LDA</td>
+    <td>Lowdin</td>
+    <td>fcc</td>
+    <td>4.124</td>
+    <td>113</td>
+  </tr>
+ <tr>
+    <td>Tis200750p000750d050750</td>
+    <td>LDA</td>
+    <td>Mulliken</td>
+    <td>fcc</td>
+    <td>4.136</td>
+    <td>110</td>
+  </tr>
+ <tr>
+    <td>Tis150750p000750d100750</td>
+    <td>GGA</td>
+    <td>NPA</td>
+    <td>fcc</td>
+    <td>4.135</td>
+    <td>119</td>
+  </tr>
+ <tr>
+    <td>Tis150850p000850d150850</td>
+    <td>GGA</td>
+    <td>Lowdin</td>
+    <td>fcc</td>
+    <td>4.139</td>
+    <td>111</td>
+  </tr>
+ <tr>
+    <td>Tis150850p000850d150850</td>
+    <td>GGA</td>
+    <td>Mulliken</td>
+    <td>fcc</td>
+    <td>4.150</td>
+    <td>109</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=022_Ti_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=022_Ti_LDA/022.pp>022.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=022_Ti_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=022_Ti_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=022_Ti_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=022_Ti_LDA/022.pp>022.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=022_Ti_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=022_Ti_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  
