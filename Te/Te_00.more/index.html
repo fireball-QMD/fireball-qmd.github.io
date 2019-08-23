@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Te GGA Mulliken Tes200650p300650d000650</title>
+</head>
+<body>
+
+<h2>Te</h2>
+<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -220.22 eV/atom </b> in Fireball and <b>  -221.418 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Te.pbe-mt_fhi.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> bcc </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Tes200650p300650d000650.dat>Fireball</a></p> <img src=ek_Tes200650p300650d000650.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Te.pbe-mt_fhi.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 6.5 (bohr), rd = 6.5 (bohr), and was generate like  qs = 2.0,  qp = 3.0,  qd = 0.0, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+<table style="
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  width: 50%;"    
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+>
+ <caption>Other basis</caption>
+  <tr>
+    <td>Base</td>
+    <td>Functional</td>
+    <td>Projection method</td>
+    <td>Crystal structure</td>
+    <td>Lattice parameter (&#8491;) </td>
+    <td>Bulk modulus (GPa)</td>
+  </tr>
+  <tr>
+    <td>Tes150700p360700d000450</td>
+    <td>LDA</td>
+    <td>NPA</td>
+    <td>bcc</td>
+    <td>4.017</td>
+    <td>77</td>
+  </tr>
+   <tr>
+    <td>Tes150700p360700d000450</td>
+    <td>LDA</td>
+    <td>Lowdin</td>
+    <td>bcc</td>
+    <td>4.017</td>
+    <td>76</td>
+  </tr>
+ <tr>
+    <td>Tes200850p300850d000850</td>
+    <td>LDA</td>
+    <td>Mulliken</td>
+    <td>bcc</td>
+    <td>4.024</td>
+    <td>68</td>
+  </tr>
+ <tr>
+    <td>Tes150850p300850d000850</td>
+    <td>GGA</td>
+    <td>NPA</td>
+    <td>bcc</td>
+    <td>4.015</td>
+    <td>85</td>
+  </tr>
+ <tr>
+    <td>Tes150600p400600d000450</td>
+    <td>GGA</td>
+    <td>Lowdin</td>
+    <td>bcc</td>
+    <td>4.016</td>
+    <td>93</td>
+  </tr>
+ <tr>
+    <td>Tes200650p300650d000650</td>
+    <td>GGA</td>
+    <td>Mulliken</td>
+    <td>bcc</td>
+    <td>4.015</td>
+    <td>70</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=052_Te_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=052_Te_LDA/052.pp>052.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=052_Te_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=052_Te_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=052_Te_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=052_Te_LDA/052.pp>052.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=052_Te_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=052_Te_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  
