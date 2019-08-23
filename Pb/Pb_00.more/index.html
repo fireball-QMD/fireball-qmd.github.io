@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Pb GGA Lowdin Pbs150550p100550d000550</title>
+</head>
+<body>
+
+<h2>Pb</h2>
+<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
+<p> <b> Projection : </b>L&ouml;wdin</p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -95.49 eV/atom </b> in Fireball and <b>  -1993.95 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Pb.pbesol-dn-rrkjus_psl.0.2.2.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> fcc </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Pbs150550p100550d000550.dat>Fireball</a></p> <img src=ek_Pbs150550p100550d000550.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Pb.pbesol-dn-rrkjus_psl.0.2.2.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 5.5 (bohr), and was generate like  qs = 1.5,  qp = 1.0,  qd = 0.0, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+<table style="
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  width: 50%;"    
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+>
+ <caption>Other basis</caption>
+  <tr>
+    <td>Base</td>
+    <td>Functional</td>
+    <td>Projection method</td>
+    <td>Crystal structure</td>
+    <td>Lattice parameter (&#8491;) </td>
+    <td>Bulk modulus (GPa)</td>
+  </tr>
+  <tr>
+    <td>Pbs000850p150850d000850</td>
+    <td>LDA</td>
+    <td>NPA</td>
+    <td>fcc</td>
+    <td>4.974</td>
+    <td>68</td>
+  </tr>
+   <tr>
+    <td>Pbs050650p150650d000650</td>
+    <td>LDA</td>
+    <td>Lowdin</td>
+    <td>fcc</td>
+    <td>4.972</td>
+    <td>61</td>
+  </tr>
+ <tr>
+    <td>Pbs000850p150850d000850</td>
+    <td>LDA</td>
+    <td>Mulliken</td>
+    <td>fcc</td>
+    <td>4.941</td>
+    <td>74</td>
+  </tr>
+ <tr>
+    <td>Pbs000800p100800d000800</td>
+    <td>GGA</td>
+    <td>NPA</td>
+    <td>fcc</td>
+    <td>4.937</td>
+    <td>79</td>
+  </tr>
+ <tr>
+    <td>Pbs150550p100550d000550</td>
+    <td>GGA</td>
+    <td>Lowdin</td>
+    <td>fcc</td>
+    <td>4.940</td>
+    <td>72</td>
+  </tr>
+ <tr>
+    <td>Pbs000950p150950d000950</td>
+    <td>GGA</td>
+    <td>Mulliken</td>
+    <td>fcc</td>
+    <td>4.971</td>
+    <td>63</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=082_Pb_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=082_Pb_LDA/082.pp>082.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=082_Pb_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=082_Pb_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=082_Pb_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=082_Pb_LDA/082.pp>082.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=082_Pb_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=082_Pb_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  
