@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>C LDA Mulliken Cs100800p000800d000800</title>
+<title>C LDA Lowdin Cs200550p050550d000350</title>
 </head>
 <body>
 
 <h2>C</h2>
 <p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
-<p> <b> Projection : </b></p>
+<p> <b> Projection : </b>L&ouml;wdin</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -153.4 eV/atom </b> in Fireball and <b>  -162.512 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> C.pbe-n-rrkjus_psl.0.1.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -154.07 eV/atom </b> in Fireball and <b>  -162.512 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> C.pbe-n-rrkjus_psl.0.1.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> dia </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Cs100800p000800d000800.dat>Fireball</a></p> <img src=ek_Cs100800p000800d000800.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Cs200550p050550d000350.dat>Fireball</a></p> <img src=ek_Cs200550p050550d000350.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_C.pbe-n-rrkjus_psl.0.1.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (bohr), rd = 8.0 (bohr), and was generate like  qs = 1.0,  qp = 0.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 3.5 (bohr), and was generate like  qs = 2.0,  qp = 0.5,  qd = 0.0, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -61,52 +61,52 @@ th, td {
     <td>Bulk modulus (GPa)</td>
   </tr>
   <tr>
-    <td>Cs200400p100400</td>
+    <td>Cs050450p175450</td>
     <td>LDA</td>
     <td>NPA</td>
     <td>dia</td>
-    <td>3.627</td>
-    <td>436</td>
+    <td>3.571</td>
+    <td>512</td>
   </tr>
    <tr>
-    <td>Cs100400p150400d000400</td>
+    <td>Cs200550p050550d000350</td>
     <td>LDA</td>
     <td>Lowdin</td>
-    <td>dia</td>
-    <td>3.567</td>
-    <td>445</td>
-  </tr>
- <tr>
-    <td>Cs100400p150400</td>
-    <td>LDA</td>
-    <td>Mulliken</td>
     <td>dia</td>
     <td>3.569</td>
-    <td>515</td>
+    <td>425</td>
   </tr>
  <tr>
-    <td>Cs050400p200400</td>
-    <td>GGA</td>
-    <td>NPA</td>
-    <td>dia</td>
-    <td>3.571</td>
-    <td>504</td>
-  </tr>
- <tr>
-    <td>Cs050400p200400</td>
-    <td>GGA</td>
-    <td>Lowdin</td>
-    <td>dia</td>
-    <td>3.571</td>
-    <td>504</td>
-  </tr>
- <tr>
-    <td>Cs050400p200400</td>
-    <td>GGA</td>
+    <td>Cs050450p175450</td>
+    <td>LDA</td>
     <td>Mulliken</td>
     <td>dia</td>
     <td>3.570</td>
+    <td>510</td>
+  </tr>
+ <tr>
+    <td>Cs050450p175450</td>
+    <td>GGA</td>
+    <td>NPA</td>
+    <td>dia</td>
+    <td>3.568</td>
     <td>502</td>
+  </tr>
+ <tr>
+    <td>Cs050450p175450</td>
+    <td>GGA</td>
+    <td>Lowdin</td>
+    <td>dia</td>
+    <td>3.568</td>
+    <td>502</td>
+  </tr>
+ <tr>
+    <td>Cs200450p200450d000400</td>
+    <td>GGA</td>
+    <td>Mulliken</td>
+    <td>dia</td>
+    <td>3.562</td>
+    <td>421</td>
   </tr>
 
 
