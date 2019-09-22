@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Ga GGA Lowdin Gas200500p067500d000500</title>
+<title>Ga LDA Mulliken Gas150650p080650</title>
 </head>
 <body>
 
 <h2>Ga</h2>
-<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
-<p> <b> Projection : </b>L&ouml;wdin</p>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -54.91 eV/atom </b> in Fireball and <b>  -2350.64 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ga.pbe-dn-rrkjus_psl.0.2.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -60.09 eV/atom </b> in Fireball and <b>  -2350.64 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ga.pbe-dn-rrkjus_psl.0.2.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> bcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Gas200500p067500d000500.dat>Fireball</a></p> <img src=ek_Gas200500p067500d000500.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Gas150650p080650.dat>Fireball</a></p> <img src=ek_Gas150650p080650.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Ga.pbe-dn-rrkjus_psl.0.2.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 5.0 (bohr), rp = 5.0 (bohr), rd = 5.0 (bohr), and was generate like  qs = 2.0,  qp = 0.67,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 6.5 (bohr), and was generate like  qs = 1.5,  qp = 0.8, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -61,52 +61,52 @@ th, td {
     <td>Bulk modulus (GPa)</td>
   </tr>
   <tr>
-    <td>Gas150500p100500d000500</td>
+    <td><a href=Ga_LDA_Lowdin_00.tar.gz>Gas150700p100700</a></td>
     <td>LDA</td>
-    <td>NPA</td>
+    <td>Lowdin</td>
     <td>bcc</td>
-    <td>3.286</td>
-    <td>72</td>
+    <td>3.372</td>
+    <td>45</td>
   </tr>
    <tr>
-    <td>Gas000500p000500</td>
-    <td>LDA</td>
-    <td>Lowdin</td>
-    <td>bcc</td>
-    <td>3.378</td>
-    <td>250</td>
-  </tr>
- <tr>
-    <td>Gas200500p050500d000500</td>
+    <td><a href=Ga_LDA_Mulliken_00.tar.gz>Gas150650p080650</a></td>
     <td>LDA</td>
     <td>Mulliken</td>
     <td>bcc</td>
-    <td>3.280</td>
-    <td>73</td>
+    <td>3.376</td>
+    <td>47</td>
   </tr>
  <tr>
-    <td>Gas150500p075500d000500</td>
+    <td><a href=Ga_LDA_NPA_00.tar.gz>Gas150700p030700</a></td>
     <td>GGA</td>
     <td>NPA</td>
     <td>bcc</td>
-    <td>3.287</td>
-    <td>78</td>
+    <td>3.324</td>
+    <td>47</td>
   </tr>
  <tr>
-    <td>Gas200500p067500d000500</td>
+    <td><a href=Ga_GGA_Lowdin_00.tar.gz>Gas150700p030700</a></td>
     <td>GGA</td>
     <td>Lowdin</td>
     <td>bcc</td>
-    <td>3.370</td>
-    <td>82</td>
+    <td>3.324</td>
+    <td>47</td>
   </tr>
  <tr>
-    <td>Gas200500p050500d000500</td>
+    <td><a href=Ga_GGA_Lowdin_00.tar.gz>Gas150700p060700</a></td>
     <td>GGA</td>
     <td>Mulliken</td>
     <td>bcc</td>
-    <td>3.300</td>
-    <td>73</td>
+    <td>3.367</td>
+    <td>43</td>
+  </tr>
+ <tr>
+    <td><a href=Ga_GGA_Mulliken_00.tar.gz>Gas150700p060700</a></td>
+    <td>LDA</td>
+    <td>NPA</td>
+    <td>bcc</td>
+    <td>3.372</td>
+    <td>45</td>
   </tr>
 
 

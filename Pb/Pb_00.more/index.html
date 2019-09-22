@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Pb GGA Lowdin Pbs150550p100550d000550</title>
+<title>Pb GGA Lowdin Pbs150600p050600d000600</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -95.49 eV/atom </b> in Fireball and <b>  -1993.95 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Pb.pbesol-dn-rrkjus_psl.0.2.2.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -95.6 eV/atom </b> in Fireball and <b>  -1993.95 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Pb.pbesol-dn-rrkjus_psl.0.2.2.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Pbs150550p100550d000550.dat>Fireball</a></p> <img src=ek_Pbs150550p100550d000550.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Pbs150600p050600d000600.dat>Fireball</a></p> <img src=ek_Pbs150600p050600d000600.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Pb.pbesol-dn-rrkjus_psl.0.2.2.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 5.5 (bohr), and was generate like  qs = 1.5,  qp = 1.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 6.0 (bohr), rp = 6.0 (bohr), rd = 6.0 (bohr), and was generate like  qs = 1.5,  qp = 0.5,  qd = 0.0, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -61,52 +61,52 @@ th, td {
     <td>Bulk modulus (GPa)</td>
   </tr>
   <tr>
-    <td>Pbs000850p150850d000850</td>
+    <td><a href=Pb_LDA_NPA_00.tar.gz>Pbs000700p175700d000400</a></td>
     <td>LDA</td>
     <td>NPA</td>
     <td>fcc</td>
-    <td>4.974</td>
-    <td>68</td>
+    <td>4.946</td>
+    <td>67</td>
   </tr>
    <tr>
-    <td>Pbs050650p150650d000650</td>
+    <td><a href=Pb_LDA_Lowdin_00.tar.gz>Pbs175700p000700d000700</a></td>
     <td>LDA</td>
     <td>Lowdin</td>
     <td>fcc</td>
-    <td>4.972</td>
-    <td>61</td>
+    <td>4.938</td>
+    <td>60</td>
   </tr>
  <tr>
-    <td>Pbs000850p150850d000850</td>
+    <td><a href=Pb_LDA_Mulliken_00.tar.gz>Pbs000700p175700d000400</a></td>
     <td>LDA</td>
     <td>Mulliken</td>
     <td>fcc</td>
-    <td>4.941</td>
-    <td>74</td>
+    <td>4.949</td>
+    <td>66</td>
   </tr>
  <tr>
-    <td>Pbs000800p100800d000800</td>
+    <td><a href=Pb_GGA_NPA_00.tar.gz>Pbs000700p150700d000400</a></td>
     <td>GGA</td>
     <td>NPA</td>
     <td>fcc</td>
     <td>4.937</td>
-    <td>79</td>
+    <td>69</td>
   </tr>
  <tr>
-    <td>Pbs150550p100550d000550</td>
+    <td><a href=Pb_GGA_NPA_00.tar.gz>Pbs150600p050600d000600</a></td>
     <td>GGA</td>
     <td>Lowdin</td>
     <td>fcc</td>
-    <td>4.940</td>
-    <td>72</td>
+    <td>4.939</td>
+    <td>56</td>
   </tr>
  <tr>
-    <td>Pbs000950p150950d000950</td>
+    <td><a href=Pb_GGA_Lowdin_00.tar.gz>Pbs150600p050600d000600</a></td>
     <td>GGA</td>
     <td>Mulliken</td>
     <td>fcc</td>
-    <td>4.971</td>
-    <td>63</td>
+    <td>4.945</td>
+    <td>67</td>
   </tr>
 
 

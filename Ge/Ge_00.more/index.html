@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Ge GGA NPA Ges200550p200550d000550</title>
+<title>Ge LDA Mulliken Ges150800p150800</title>
 </head>
 <body>
 
 <h2>Ge</h2>
-<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
-<p> <b> Projection : </b>Natural population analysis (NPA)</p>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -106.17 eV/atom </b> in Fireball and <b>  -160.3415 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ge.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -107.62 eV/atom </b> in Fireball and <b>  -160.3415 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ge.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> dia </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Ges200550p200550d000550.dat>Fireball</a></p> <img src=ek_Ges200550p200550d000550.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Ges150800p150800.dat>Fireball</a></p> <img src=ek_Ges150800p150800.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Ge.pbe-n-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 5.5 (bohr), and was generate like  qs = 2.0,  qp = 2.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (bohr), and was generate like  qs = 1.5,  qp = 1.5, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -61,31 +61,31 @@ th, td {
     <td>Bulk modulus (GPa)</td>
   </tr>
   <tr>
-    <td>Ges150600p200600</td>
+    <td><a href=Ge_LDA_NPA_00.tar.gz>Ges100700p200700d000700</a></td>
     <td>LDA</td>
     <td>NPA</td>
     <td>dia</td>
-    <td>5.781</td>
-    <td>57</td>
+    <td>5.776</td>
+    <td>59</td>
   </tr>
    <tr>
-    <td>Ges150600p200600</td>
+    <td><a href=Ge_LDA_Lowdin_00.tar.gz>Ges150600p200600</a></td>
     <td>LDA</td>
     <td>Lowdin</td>
     <td>dia</td>
     <td>5.781</td>
-    <td>57</td>
+    <td>56</td>
   </tr>
  <tr>
-    <td>Ges200600p175600d000450</td>
+    <td><a href=Ge_LDA_Mulliken_00.tar.gz>Ges150800p150800</a></td>
     <td>LDA</td>
     <td>Mulliken</td>
     <td>dia</td>
-    <td>5.776</td>
-    <td>60</td>
+    <td>5.772</td>
+    <td>57</td>
   </tr>
  <tr>
-    <td>Ges200550p200550d000550</td>
+    <td><a href=Ge_GGA_NPA_00.tar.gz>Ges200550p200550d000550</a></td>
     <td>GGA</td>
     <td>NPA</td>
     <td>dia</td>
@@ -93,20 +93,20 @@ th, td {
     <td>59</td>
   </tr>
  <tr>
-    <td>Ges175600p200600</td>
+    <td><a href=Ge_GGA_NPA_00.tar.gz>Ges175600p200600</a></td>
     <td>GGA</td>
     <td>Lowdin</td>
     <td>dia</td>
     <td>5.782</td>
-    <td>53</td>
+    <td>52</td>
   </tr>
  <tr>
-    <td>Ges200600p150600d000450</td>
+    <td><a href=Ge_GGA_Lowdin_00.tar.gz>Ges175600p200600</a></td>
     <td>GGA</td>
     <td>Mulliken</td>
     <td>dia</td>
-    <td>5.774</td>
-    <td>61</td>
+    <td>5.770</td>
+    <td>62</td>
   </tr>
 
 

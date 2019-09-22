@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Te GGA Mulliken Tes200650p300650d000650</title>
+<title>Te LDA Mulliken Tes175700p300700d000400</title>
 </head>
 <body>
 
 <h2>Te</h2>
-<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
 <p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -220.22 eV/atom </b> in Fireball and <b>  -221.418 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Te.pbe-mt_fhi.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -221.69 eV/atom </b> in Fireball and <b>  -221.418 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Te.pbe-mt_fhi.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> bcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Tes200650p300650d000650.dat>Fireball</a></p> <img src=ek_Tes200650p300650d000650.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Tes175700p300700d000400.dat>Fireball</a></p> <img src=ek_Tes175700p300700d000400.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Te.pbe-mt_fhi.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 6.5 (bohr), rd = 6.5 (bohr), and was generate like  qs = 2.0,  qp = 3.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 4.0 (bohr), and was generate like  qs = 1.75,  qp = 3.0,  qd = 0.0, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -61,52 +61,52 @@ th, td {
     <td>Bulk modulus (GPa)</td>
   </tr>
   <tr>
-    <td>Tes150700p360700d000450</td>
+    <td><a href=Te_LDA_NPA_00.tar.gz>Tes175700p300700d000400</a></td>
     <td>LDA</td>
     <td>NPA</td>
     <td>bcc</td>
-    <td>4.017</td>
-    <td>77</td>
+    <td>4.012</td>
+    <td>35</td>
   </tr>
    <tr>
-    <td>Tes150700p360700d000450</td>
+    <td><a href=Te_LDA_Lowdin_00.tar.gz>Tes175700p300700d000400</a></td>
     <td>LDA</td>
     <td>Lowdin</td>
     <td>bcc</td>
-    <td>4.017</td>
-    <td>76</td>
+    <td>4.014</td>
+    <td>35</td>
   </tr>
  <tr>
-    <td>Tes200850p300850d000850</td>
+    <td><a href=Te_LDA_Mulliken_00.tar.gz>Tes175700p300700d000400</a></td>
     <td>LDA</td>
     <td>Mulliken</td>
     <td>bcc</td>
-    <td>4.024</td>
-    <td>68</td>
+    <td>4.013</td>
+    <td>35</td>
   </tr>
  <tr>
-    <td>Tes150850p300850d000850</td>
+    <td><a href=Te_GGA_NPA_00.tar.gz>Tes150700p300700d000400</a></td>
     <td>GGA</td>
     <td>NPA</td>
     <td>bcc</td>
-    <td>4.015</td>
-    <td>85</td>
+    <td>4.006</td>
+    <td>36</td>
   </tr>
  <tr>
-    <td>Tes150600p400600d000450</td>
+    <td><a href=Te_GGA_NPA_00.tar.gz>Tes100700p400700d000450</a></td>
     <td>GGA</td>
     <td>Lowdin</td>
     <td>bcc</td>
-    <td>4.016</td>
-    <td>93</td>
+    <td>4.019</td>
+    <td>36</td>
   </tr>
  <tr>
-    <td>Tes200650p300650d000650</td>
+    <td><a href=Te_GGA_Lowdin_00.tar.gz>Tes100700p400700d000450</a></td>
     <td>GGA</td>
     <td>Mulliken</td>
     <td>bcc</td>
-    <td>4.015</td>
-    <td>70</td>
+    <td>4.008</td>
+    <td>36</td>
   </tr>
 
 
