@@ -1,5 +1,5 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#info ./psgen ncpp 10:40:10 ago 24 2019 dani                          
+#info ./psgen ncpp 19:48:44 ago 26 2019 dani                          
                                                                       
 fhi pseudopotential tool fhipp - version rev270603B                   
                                                                       

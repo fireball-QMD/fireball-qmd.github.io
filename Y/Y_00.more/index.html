@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Y LDA Lowdin Ys150900p000900d050900</title>
+<title>Y LDA Mulliken Ys060800p000800d100800</title>
 </head>
 <body>
 
 <h2>Y</h2>
 <p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
-<p> <b> Projection : </b>L&ouml;wdin</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -42.23 eV/atom </b> in Fireball and <b>  -42.8002 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Y.pbe-mt_fhi.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -42.28 eV/atom </b> in Fireball and <b>  -42.8002 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Y.pbe-mt_fhi.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Ys150900p000900d050900.dat>Fireball</a></p> <img src=ek_Ys150900p000900d050900.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Ys060800p000800d100800.dat>Fireball</a></p> <img src=ek_Ys060800p000800d100800.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Y.pbe-mt_fhi.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 9.0 (bohr), rp = 9.0 (bohr), rd = 9.0 (bohr), and was generate like  qs = 1.5,  qp = 0.0,  qd = 0.5, .
+The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (bohr), rd = 8.0 (bohr), and was generate like  qs = 0.6,  qp = 0.0,  qd = 1.0, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -39,74 +39,65 @@ The cut off radio of the orbitals in Fireball are   rs = 9.0 (bohr), rp = 9.0 (b
    
 <hr />
 
-<table style="
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-  text-align: center;
-  width: 50%;"    
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
->
- <caption>Other basis</caption>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <table class="w3-table w3-striped w3-border">
+  <caption>Other basis</caption>
   <tr>
-    <td>Base</td>
-    <td>Functional</td>
-    <td>Projection method</td>
-    <td>Crystal structure</td>
-    <td>Lattice parameter (&#8491;) </td>
-    <td>Bulk modulus (GPa)</td>
+    <th>Base</th>
+    <th>Functional</th>
+    <th>Projection method</th>
+    <th>Crystal structure</th>
+    <th>Lattice parameter (&#8491;) </th>
+    <th>Bulk modulus (GPa)</th>
   </tr>
   <tr>
-    <td>Ys150800p000800d025800</td>
+    <td><a href=Y_LDA_NPA_00.tar.gz>Ys070800p000800d090800</a></td>
     <td>LDA</td>
-    <td>NPA</td>
+    <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>5.089</td>
-    <td>38</td>
+    <td>5.090</td>
+    <td>36</td>
   </tr>
    <tr>
-    <td>Ys100800p000800d075800</td>
+    <td><a href=Y_LDA_Lowdin_00.tar.gz>Ys190800p000800d000800</a></td>
     <td>LDA</td>
-    <td>Lowdin</td>
+    <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>5.081</td>
-    <td>39</td>
+    <td>5.086</td>
+    <td>37</td>
   </tr>
  <tr>
-    <td>Ys150800p000800d025800</td>
+    <td><a href=Y_LDA_Mulliken_00.tar.gz>Ys060800p000800d100800</a></td>
     <td>LDA</td>
-    <td>Mulliken</td>
+    <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>5.081</td>
-    <td>40</td>
+    <td>5.084</td>
+    <td>38</td>
   </tr>
  <tr>
-    <td>Ys000700p000700d000700</td>
+    <td><a href=Y_GGA_NPA_00.tar.gz>Ys000700p000700d050700</a></td>
     <td>GGA</td>
-    <td>NPA</td>
+    <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>5.136</td>
-    <td>39</td>
+    <td>5.085</td>
+    <td>47</td>
   </tr>
  <tr>
-    <td>Ys000850p000850d050850</td>
+    <td><a href=Y_GGA_NPA_00.tar.gz>Ys080650p000650d050650</a></td>
     <td>GGA</td>
-    <td>Lowdin</td>
+    <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>5.107</td>
-    <td>42</td>
+    <td>5.088</td>
+    <td>50</td>
   </tr>
  <tr>
-    <td>Ys000950p000950d050950</td>
+    <td><a href=Y_GGA_Mulliken_00.tar.gz>Ys000650p000650d100650</a></td>
     <td>GGA</td>
-    <td>Mulliken</td>
+    <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>5.115</td>
-    <td>40</td>
+    <td>5.089</td>
+    <td>51</td>
   </tr>
 
 
