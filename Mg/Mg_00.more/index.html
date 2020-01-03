@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Mg GGA NPA Mgs000700p000700</title>
+<title>Mg GGA Mulliken Mgs190660p000450</title>
 </head>
 <body>
 
 <h2>Mg</h2>
 <p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
-<p> <b> Projection : </b>Natural population analysis (NPA)</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -23.26 eV/atom </b> in Fireball and <b>  -1720.72 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Mg.pbe-spn-rrkjus_psl.1.0.0.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -22.62 eV/atom </b> in Fireball and <b>  -1720.72 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Mg.pbe-spn-rrkjus_psl.1.0.0.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,14 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Mgs000700p000700.dat>Fireball</a></p> <img src=ek_Mgs000700p000700.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Mgs190660p000450.dat>Fireball</a></p> <img src=ek_Mgs190660p000450.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Mg.pbe-spn-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), and was generate like  qs = 0.0,  qp = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 6.6 (bohr), rp = 4.5 (bohr), and was generate like  qs = 1.9,  qp = 0.0, .
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -39,74 +39,65 @@ The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (b
    
 <hr />
 
-<table style="
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-  text-align: center;
-  width: 50%;"    
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
->
- <caption>Other basis</caption>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <table class="w3-table w3-striped w3-border">
+  <caption>Other basis</caption>
   <tr>
-    <td>Base</td>
-    <td>Functional</td>
-    <td>Projection method</td>
-    <td>Crystal structure</td>
-    <td>Lattice parameter (&#8491;) </td>
-    <td>Bulk modulus (GPa)</td>
+    <th>Base</th>
+    <th>Functional</th>
+    <th>Projection method</th>
+    <th>Crystal structure</th>
+    <th>Lattice parameter (&#8491;) </th>
+    <th>Bulk modulus (GPa)</th>
   </tr>
   <tr>
-    <td>Mgs100750p000750</td>
+    <td><a href=Mg_LDA_NPA_00.tar.gz>Mgs1s1905</a></td>
     <td>LDA</td>
-    <td>NPA</td>
+    <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>4.527</td>
-    <td>34</td>
+    <td>4.501</td>
+    <td>26</td>
   </tr>
    <tr>
-    <td>Mgs200800p000800</td>
+    <td><a href=Mg_LDA_Lowdin_00.tar.gz>Mgs1s1705</a></td>
     <td>LDA</td>
-    <td>Lowdin</td>
+    <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>4.535</td>
+    <td>4.506</td>
+    <td>24</td>
+  </tr>
+ <tr>
+    <td><a href=Mg_LDA_Mulliken_00.tar.gz>Mgs1s2005</a></td>
+    <td>LDA</td>
+    <td>Mulliken dipole</td>
+    <td>fcc</td>
+    <td>4.499</td>
+    <td>26</td>
+  </tr>
+ <tr>
+    <td><a href=Mg_GGA_NPA_00.tar.gz>Mgs000750p000750</a></td>
+    <td>GGA</td>
+    <td>Natural population analysis (NPA)</td>
+    <td>fcc</td>
+    <td>4.533</td>
     <td>36</td>
   </tr>
  <tr>
-    <td>Mgs150750p000750</td>
-    <td>LDA</td>
-    <td>Mulliken</td>
+    <td><a href=Mg_GGA_NPA_00.tar.gz>Mgs160660p000450</a></td>
+    <td>GGA</td>
+    <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>4.522</td>
+    <td>4.524</td>
     <td>37</td>
   </tr>
  <tr>
-    <td>Mgs000700p000700</td>
+    <td><a href=Mg_GGA_Mulliken_00.tar.gz>Mgs190660p000450</a></td>
     <td>GGA</td>
-    <td>NPA</td>
+    <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>4.526</td>
-    <td>35</td>
-  </tr>
- <tr>
-    <td>Mgs000700p000700</td>
-    <td>GGA</td>
-    <td>Lowdin</td>
-    <td>fcc</td>
-    <td>4.405</td>
-    <td>43</td>
-  </tr>
- <tr>
-    <td>Mgs000750p000750</td>
-    <td>GGA</td>
-    <td>Mulliken</td>
-    <td>fcc</td>
-    <td>4.445</td>
-    <td>38</td>
+    <td>4.529</td>
+    <td>37</td>
   </tr>
 
 
