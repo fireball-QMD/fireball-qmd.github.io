@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>B GGA Lowdin Bs090500p000500</title>
+<title>B GGA NPA Bs200400p050400d000400Id150075000</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -73.16 eV/atom </b> in Fireball and <b>  -84.5408 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> B.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -74.48 eV/atom </b> in Fireball and <b>  -84.5408 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> B.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Bs090500p000500.dat>Fireball</a></p> <img src=ek_Bs090500p000500.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Bs200400p050400d000400Id150075000.dat>Fireball</a></p> <img src=ek_Bs200400p050400d000400Id150075000.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_B.pbe-n-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 5.0 (bohr), rp = 5.0 (bohr), and was generate like  qs = 0.9,  qp = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 4.0 (bohr), rp = 4.0 (bohr), rd = 4.0 (bohr), and was generate like  qs = 2.0,  qp = 0.5,  qd = 0.0, .
+  The orbital d had been generated from the ion with charge  qs = 1.5, qp = 0.75, qd = 1.5. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -52,14 +53,6 @@ The cut off radio of the orbitals in Fireball are   rs = 5.0 (bohr), rp = 5.0 (b
     <th>Bulk modulus (GPa)</th>
   </tr>
   <tr>
-    <td><a href=B_LDA_Lowdin_00.tar.gz>Bs100600p000600</a></td>
-    <td>LDA</td>
-    <td>L&ouml;wdin</td>
-    <td>fcc</td>
-    <td>2.871</td>
-    <td>292</td>
-  </tr>
-   <tr>
     <td><a href=B_LDA_NPA_00.tar.gz>Bs190550p100550d000350</a></td>
     <td>LDA</td>
     <td>Natural population analysis (NPA)</td>
@@ -67,24 +60,32 @@ The cut off radio of the orbitals in Fireball are   rs = 5.0 (bohr), rp = 5.0 (b
     <td>2.875</td>
     <td>261</td>
   </tr>
+   <tr>
+    <td><a href=B_LDA_Lowdin_00.tar.gz>Bs100600p000600</a></td>
+    <td>LDA</td>
+    <td>L&ouml;wdin</td>
+    <td>fcc</td>
+    <td>2.871</td>
+    <td>292</td>
+  </tr>
  <tr>
-    <td><a href=B_LDA_Mulliken_00.tar.gz>Bs190550p070550d000350</a></td>
+    <td><a href=B_LDA_Mulliken_00.tar.gz>Bs200400p070400d000400Id100050000</a></td>
     <td>LDA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>2.872</td>
-    <td>250</td>
+    <td>2.869</td>
+    <td>258</td>
   </tr>
  <tr>
-    <td><a href=B_GGA_NPA_00.tar.gz>Bs090500p000500</a></td>
+    <td><a href=B_GGA_NPA_00.tar.gz>Bs200400p050400d000400Id150075000</a></td>
     <td>GGA</td>
     <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
     <td>2.866</td>
-    <td>277</td>
+    <td>265</td>
   </tr>
  <tr>
-    <td><a href=B_GGA_Lowdin_00.tar.gz>Bs090500p000500</a></td>
+    <td><a href=B_GGA_NPA_00.tar.gz>Bs090500p000500</a></td>
     <td>GGA</td>
     <td>L&ouml;wdin</td>
     <td>fcc</td>
@@ -92,12 +93,12 @@ The cut off radio of the orbitals in Fireball are   rs = 5.0 (bohr), rp = 5.0 (b
     <td>277</td>
   </tr>
  <tr>
-    <td><a href=B_GGA_Mulliken_00.tar.gz>Bs090500p000500</a></td>
+    <td><a href=B_GGA_Mulliken_00.tar.gz>Bs200400p050400d000400Id150075000</a></td>
     <td>GGA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
     <td>2.865</td>
-    <td>277</td>
+    <td>272</td>
   </tr>
 
 
