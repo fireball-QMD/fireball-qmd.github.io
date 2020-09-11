@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Po GGA Lowdin Pos200550p400550d000450</title>
+<title>Po LDA Lowdin Pos200700p270700d000700Id150300000</title>
 </head>
 <body>
 
 <h2>Po</h2>
-<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
 <p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -213.69 eV/atom </b> in Fireball and <b>  -382.923 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Po.pbe-mt_fhi.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -217.41 eV/atom </b> in Fireball and <b>  -382.923 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Po.pbe-mt_fhi.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> sc </b> structure with the lattice c
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Pos200550p400550d000450.dat>Fireball</a></p> <img src=ek_Pos200550p400550d000450.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Pos200700p270700d000700Id150300000.dat>Fireball</a></p> <img src=ek_Pos200700p270700d000700Id150300000.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Po.pbe-mt_fhi.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 4.5 (bohr), and was generate like  qs = 2.0,  qp = 4.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 7.0 (bohr), and was generate like  qs = 2.0,  qp = 2.7,  qd = 0.0, .
+  The orbital d had been generated from the ion with charge  qs = 1.5, qp = 3.0, qd = 1.5. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -60,11 +61,11 @@ The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (b
     <td>42</td>
   </tr>
    <tr>
-    <td><a href=Po_LDA_Lowdin_00.tar.gz>Pos175700p300700d000700</a></td>
+    <td><a href=Po_LDA_Lowdin_00.tar.gz>Pos200700p270700d000700Id150300000</a></td>
     <td>LDA</td>
     <td>L&ouml;wdin</td>
     <td>sc</td>
-    <td>3.419</td>
+    <td>3.423</td>
     <td>34</td>
   </tr>
  <tr>
@@ -84,20 +85,20 @@ The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (b
     <td>40</td>
   </tr>
  <tr>
-    <td><a href=Po_GGA_NPA_00.tar.gz>Pos200550p400550d000450</a></td>
+    <td><a href=Po_GGA_NPA_00.tar.gz>Pos180600p380600d000600Id150300000</a></td>
     <td>GGA</td>
     <td>L&ouml;wdin</td>
     <td>sc</td>
-    <td>3.425</td>
-    <td>39</td>
+    <td>3.428</td>
+    <td>36</td>
   </tr>
  <tr>
-    <td><a href=Po_GGA_Mulliken_00.tar.gz>Pos200550p400550d000450</a></td>
+    <td><a href=Po_GGA_Mulliken_00.tar.gz>Pos200700p240700d000700Id150300000</a></td>
     <td>GGA</td>
     <td>Mulliken dipole</td>
     <td>sc</td>
     <td>3.430</td>
-    <td>40</td>
+    <td>39</td>
   </tr>
 
 

@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Au LDA Mulliken Aus150650p000350d750650</title>
+<title>Au LDA Mulliken Aus150550p000550Ip000000000d625550</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -873.62 eV/atom </b> in Fireball and <b>  -1159.43 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Au.pbesol-dn-rrkjus_psl.0.1.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -862.05 eV/atom </b> in Fireball and <b>  -1159.43 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Au.pbesol-dn-rrkjus_psl.0.1.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Aus150650p000350d750650.dat>Fireball</a></p> <img src=ek_Aus150650p000350d750650.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Aus150550p000550Ip000000000d625550.dat>Fireball</a></p> <img src=ek_Aus150550p000550Ip000000000d625550.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Au.pbesol-dn-rrkjus_psl.0.1.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 3.5 (bohr), rd = 6.5 (bohr), and was generate like  qs = 1.5,  qp = 0.0,  qd = 7.5, .
+The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 5.5 (bohr), and was generate like  qs = 1.5,  qp = 0.0,  qd = 6.25, .
+  The orbital p had been generated from the ion with charge  qs = 0.0, qp = 0.0, qd = 0.0. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -52,44 +53,44 @@ The cut off radio of the orbitals in Fireball are   rs = 6.5 (bohr), rp = 3.5 (b
     <th>Bulk modulus (GPa)</th>
   </tr>
   <tr>
-    <td><a href=Au_LDA_NPA_00.tar.gz>Aus200800p000350d725800</a></td>
+    <td><a href=Au_LDA_NPA_00.tar.gz>Aus150550p000550Ip000000000d625550</a></td>
     <td>LDA</td>
     <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>4.094</td>
-    <td>170</td>
+    <td>4.096</td>
+    <td>172</td>
   </tr>
    <tr>
-    <td><a href=Au_LDA_Lowdin_00.tar.gz>Aus150650p000350d750650</a></td>
+    <td><a href=Au_LDA_Lowdin_00.tar.gz>Aus150550p000550Ip000000000d625550</a></td>
     <td>LDA</td>
     <td>L&ouml;wdin</td>
     <td>fcc</td>
     <td>4.096</td>
-    <td>176</td>
+    <td>172</td>
   </tr>
  <tr>
-    <td><a href=Au_LDA_Mulliken_00.tar.gz>Aus150650p000350d750650</a></td>
+    <td><a href=Au_LDA_Mulliken_00.tar.gz>Aus150550p000550Ip000000000d625550</a></td>
     <td>LDA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>4.095</td>
-    <td>176</td>
+    <td>4.097</td>
+    <td>172</td>
   </tr>
  <tr>
-    <td><a href=Au_GGA_NPA_00.tar.gz>Aus000650p000350d825650</a></td>
+    <td><a href=Au_GGA_NPA_00.tar.gz>Aus000550p000550Ip000000000d700550</a></td>
     <td>GGA</td>
     <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>4.095</td>
-    <td>185</td>
+    <td>4.094</td>
+    <td>166</td>
   </tr>
  <tr>
-    <td><a href=Au_GGA_NPA_00.tar.gz>Aus175600p000350d725600</a></td>
+    <td><a href=Au_GGA_NPA_00.tar.gz>Aus000550p000550Ip000000000d700550</a></td>
     <td>GGA</td>
     <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>4.094</td>
-    <td>173</td>
+    <td>4.093</td>
+    <td>167</td>
   </tr>
  <tr>
     <td><a href=Au_GGA_Mulliken_00.tar.gz>Aus175600p000350d725600</a></td>

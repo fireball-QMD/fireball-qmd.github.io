@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Pd GGA NPA Pds060600d620600</title>
+<title>Pd GGA Mulliken Pds200700p000700Ip000000000d640700</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -766.45 eV/atom </b> in Fireball and <b>  -786.25 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Pd.pbe-rrkjus.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -773.74 eV/atom </b> in Fireball and <b>  -786.25 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Pd.pbe-rrkjus.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Pds060600d620600.dat>Fireball</a></p> <img src=ek_Pds060600d620600.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Pds200700p000700Ip000000000d640700.dat>Fireball</a></p> <img src=ek_Pds200700p000700Ip000000000d640700.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Pd.pbe-rrkjus.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 6.0 (bohr), rd = 6.0 (bohr), and was generate like  qs = 0.6,  qd = 6.2, .
+The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 7.0 (bohr), and was generate like  qs = 2.0,  qp = 0.0,  qd = 6.4, .
+  The orbital p had been generated from the ion with charge  qs = 0.0, qp = 0.0, qd = 0.0. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -92,12 +93,12 @@ The cut off radio of the orbitals in Fireball are   rs = 6.0 (bohr), rd = 6.0 (b
     <td>170</td>
   </tr>
  <tr>
-    <td><a href=Pd_GGA_Mulliken_00.tar.gz>Pds060600d620600</a></td>
+    <td><a href=Pd_GGA_Mulliken_00.tar.gz>Pds200700p000700Ip000000000d640700</a></td>
     <td>GGA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>3.968</td>
-    <td>170</td>
+    <td>3.971</td>
+    <td>166</td>
   </tr>
 
 

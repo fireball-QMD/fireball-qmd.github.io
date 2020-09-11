@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Te LDA Mulliken Tes175700p300700d000400</title>
+<title>Te GGA Mulliken Tes200700p280700d000700Id100200000</title>
 </head>
 <body>
 
 <h2>Te</h2>
-<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
 <p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -221.69 eV/atom </b> in Fireball and <b>  -221.418 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Te.pbe-mt_fhi.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -219.91 eV/atom </b> in Fireball and <b>  -221.418 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Te.pbe-mt_fhi.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> bcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Tes175700p300700d000400.dat>Fireball</a></p> <img src=ek_Tes175700p300700d000400.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Tes200700p280700d000700Id100200000.dat>Fireball</a></p> <img src=ek_Tes200700p280700d000700Id100200000.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Te.pbe-mt_fhi.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 4.0 (bohr), and was generate like  qs = 1.75,  qp = 3.0,  qd = 0.0, .
+The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 7.0 (bohr), and was generate like  qs = 2.0,  qp = 2.8,  qd = 0.0, .
+  The orbital d had been generated from the ion with charge  qs = 1.0, qp = 2.0, qd = 1.0. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -84,20 +85,20 @@ The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (b
     <td>36</td>
   </tr>
  <tr>
-    <td><a href=Te_GGA_NPA_00.tar.gz>Tes100700p400700d000450</a></td>
+    <td><a href=Te_GGA_NPA_00.tar.gz>Tes200600p360600d000600Id100200000</a></td>
     <td>GGA</td>
     <td>L&ouml;wdin</td>
     <td>bcc</td>
-    <td>4.019</td>
-    <td>36</td>
+    <td>4.016</td>
+    <td>40</td>
   </tr>
  <tr>
-    <td><a href=Te_GGA_Mulliken_00.tar.gz>Tes150700p300700d000400</a></td>
+    <td><a href=Te_GGA_Mulliken_00.tar.gz>Tes200700p280700d000700Id100200000</a></td>
     <td>GGA</td>
     <td>Mulliken dipole</td>
     <td>bcc</td>
-    <td>4.008</td>
-    <td>36</td>
+    <td>4.015</td>
+    <td>39</td>
   </tr>
 
 

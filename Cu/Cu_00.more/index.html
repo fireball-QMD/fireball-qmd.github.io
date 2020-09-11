@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Cu LDA NPA Cus050700p000700d890700</title>
+<title>Cu GGA NPA Cus000700p000700Ip100000450d900700</title>
 </head>
 <body>
 
 <h2>Cu</h2>
-<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
 <p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -1360.28 eV/atom </b> in Fireball and <b>  -1670.02 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Cu.pbe-dn-rrkjus_psl.1.0.0.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -1354.0 eV/atom </b> in Fireball and <b>  -1670.02 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Cu.pbe-dn-rrkjus_psl.1.0.0.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> fcc </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Cus050700p000700d890700.dat>Fireball</a></p> <img src=ek_Cus050700p000700d890700.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Cus000700p000700Ip100000450d900700.dat>Fireball</a></p> <img src=ek_Cus000700p000700Ip100000450d900700.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Cu.pbe-dn-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 7.0 (bohr), and was generate like  qs = 0.5,  qp = 0.0,  qd = 8.9, .
+The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (bohr), rd = 7.0 (bohr), and was generate like  qs = 0.0,  qp = 0.0,  qd = 9.0, .
+  The orbital p had been generated from the ion with charge  qs = 1.0, qp = 0.0, qd = 1.0. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -68,36 +69,36 @@ The cut off radio of the orbitals in Fireball are   rs = 7.0 (bohr), rp = 7.0 (b
     <td>126</td>
   </tr>
  <tr>
-    <td><a href=Cu_LDA_Mulliken_00.tar.gz>Cus050700p000700d925700</a></td>
+    <td><a href=Cu_LDA_Mulliken_00.tar.gz>Cus200450p000450Ip200000240d790450</a></td>
     <td>LDA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>3.663</td>
-    <td>85</td>
+    <td>3.634</td>
+    <td>128</td>
   </tr>
  <tr>
-    <td><a href=Cu_GGA_NPA_00.tar.gz>Cus125700p000350d900700</a></td>
+    <td><a href=Cu_GGA_NPA_00.tar.gz>Cus000700p000700Ip100000450d900700</a></td>
     <td>GGA</td>
     <td>Natural population analysis (NPA)</td>
     <td>fcc</td>
-    <td>3.632</td>
-    <td>185</td>
+    <td>3.629</td>
+    <td>147</td>
   </tr>
  <tr>
-    <td><a href=Cu_GGA_NPA_00.tar.gz>Cus125700p000350d900700</a></td>
+    <td><a href=Cu_GGA_NPA_00.tar.gz>Cus200700p000700Ip075000750d830700</a></td>
     <td>GGA</td>
     <td>L&ouml;wdin</td>
     <td>fcc</td>
-    <td>3.647</td>
-    <td>178</td>
+    <td>3.629</td>
+    <td>139</td>
   </tr>
  <tr>
-    <td><a href=Cu_GGA_Mulliken_00.tar.gz>Cus050700p000350d925700</a></td>
+    <td><a href=Cu_GGA_Mulliken_00.tar.gz>Cus200700p000700Ip075000750d830700</a></td>
     <td>GGA</td>
     <td>Mulliken dipole</td>
     <td>fcc</td>
-    <td>3.647</td>
-    <td>190</td>
+    <td>3.629</td>
+    <td>140</td>
   </tr>
 
 

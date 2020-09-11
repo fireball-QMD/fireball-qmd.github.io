@@ -1,18 +1,18 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Ge LDA Mulliken Ges150800p150800</title>
+<title>Ge GGA NPA Ges200550p200550d000550Id200200000</title>
 </head>
 <body>
 
 <h2>Ge</h2>
-<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p><b> Functional :</b> GGA X Becke C Lee/Yang/Parr</p>
 <p> <b> Projection : </b>Mulliken dipole</p>
 
    
 
 <p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
-The energy is plotted relative to the minimum energy for each case,<b>  -107.62 eV/atom </b> in Fireball and <b>  -160.3415 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ge.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
+The energy is plotted relative to the minimum energy for each case,<b>  -106.17 eV/atom </b> in Fireball and <b>  -160.3415 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ge.pbe-n-rrkjus_psl.1.0.0.UPF </a>. 
 a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
 </p>
 <img src="bulk.png" alt="bulk.png"> 
@@ -24,14 +24,15 @@ Calculation the band dispersion for the <b> dia </b> structure with the lattice 
 
 <table style="width:100%">
   <tr>
-    <th><p><a href=ek_Ges150800p150800.dat>Fireball</a></p> <img src=ek_Ges150800p150800.png alt="bandas for Fireball"> </th>
+    <th><p><a href=ek_Ges200550p200550d000550Id200200000.dat>Fireball</a></p> <img src=ek_Ges200550p200550d000550Id200200000.png alt="bandas for Fireball"> </th>
    <th><p>Quamtum espresso</p> <img src=ek0_Ge.pbe-n-rrkjus_psl.1.0.0.UPF.png alt=bandas for Quamtum espresso"> </th>
   </tr>
 </table>
 
 <hr />
 <p>
-The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (bohr), and was generate like  qs = 1.5,  qp = 1.5, .
+The cut off radio of the orbitals in Fireball are   rs = 5.5 (bohr), rp = 5.5 (bohr), rd = 5.5 (bohr), and was generate like  qs = 2.0,  qp = 2.0,  qd = 0.0, .
+  The orbital d had been generated from the ion with charge  qs = 2.0, qp = 2.0, qd = 2.0. 
 </p>
 
 <img src="wf.png" alt="wf.png"> 
@@ -52,12 +53,12 @@ The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (b
     <th>Bulk modulus (GPa)</th>
   </tr>
   <tr>
-    <td><a href=Ge_LDA_NPA_00.tar.gz>Ges100700p200700d000700</a></td>
+    <td><a href=Ge_LDA_NPA_00.tar.gz>Ges200700p110700d000700Id100100000</a></td>
     <td>LDA</td>
     <td>Natural population analysis (NPA)</td>
     <td>dia</td>
     <td>5.776</td>
-    <td>59</td>
+    <td>60</td>
   </tr>
    <tr>
     <td><a href=Ge_LDA_Lowdin_00.tar.gz>Ges150600p200600</a></td>
@@ -76,7 +77,7 @@ The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (b
     <td>57</td>
   </tr>
  <tr>
-    <td><a href=Ge_GGA_NPA_00.tar.gz>Ges200550p200550d000550</a></td>
+    <td><a href=Ge_GGA_NPA_00.tar.gz>Ges200550p200550d000550Id200200000</a></td>
     <td>GGA</td>
     <td>Natural population analysis (NPA)</td>
     <td>dia</td>
