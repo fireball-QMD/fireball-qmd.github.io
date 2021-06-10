@@ -236,7 +236,7 @@ h4, h5, h6 {
 <h1 class="entry-title">Fireball</h1>
 <p>FIREBALL is a local-orbital DFT implementation of molecular dynamics. The method allows for the simulation and calculation of very large supercells of thousands of atoms or very long MD simulations with ease.</p>
 <ul>
-<li><a href="http://fireball.ftmc.uam.es/moodle/course/view.php?id=8">Open course </a>(guest access, tutorials, <strong>static executables</strong>, etc &#8230; )</li>
+<li><a href="http://fireball.ftmc.uam.es/moodle/course/view.php?id=6">Open course </a>(guest access, tutorials, <strong>static executables</strong>, etc &#8230; )</li>
 <li><a href="https://github.com/fireball-QMD">Source code (GPLv3)</a> : git clone https://github.com/fireball-QMD/progs</li>
 <li><a href="http://nanosurf.fzu.cz/wiki/doku.php?id=fireball">wiki</a></li>
 </ul>
