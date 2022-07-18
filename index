@@ -239,6 +239,7 @@ h4, h5, h6 {
 <li><a href="http://fireball.ftmc.uam.es/moodle/course/view.php?id=6">Open course </a>(guest access, tutorials, <strong>static executables</strong>, etc &#8230; )</li>
 <li><a href="https://github.com/fireball-QMD">Source code (GPLv3)</a> : git clone https://github.com/fireball-QMD/progs</li>
 <li><a href="http://nanosurf.fzu.cz/wiki/doku.php?id=fireball">wiki</a></li>
+<li><a href="http://fireball.ftmc.uam.es/mulliken-dipole/">Mulliken-dipole Charges</a></li>
 </ul>
 <p>The recommended way to cite <strong>fireball:</strong></p>
 <ul>
