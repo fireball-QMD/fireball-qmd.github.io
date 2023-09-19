@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Create &#8212; fireball-qmd GPLv3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=8fc2db88" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=79a2284a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Begin" href="begin.html" />
+    <link rel="prev" title="Fireball &amp; Amber" href="fireball_amber.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="begin.html" title="Begin"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fireball_amber.html" title="Fireball &amp; Amber"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Create</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="create">
+<h1>Create<a class="headerlink" href="#create" title="Permalink to this heading">¶</a></h1>
+<p>We can get the code from:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/fireball-QMD/create/
+</pre></div>
+</div>
+<p>We compile to obtain create.x.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>create/cprogs/
+make
+<span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<p>We download the wave functions and the pseudopotentials.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>https://fireball-qmd.github.io/Si/Si_01.tar.gz
+
+tar<span class="w"> </span>-xvf<span class="w"> </span>Si_01.tar.gz
+
+ls
+cinput<span class="w">  </span>coutput<span class="w">  </span>cprogs<span class="w">  </span>create.com<span class="w">  </span>create.input<span class="w"> </span>...
+</pre></div>
+</div>
+<p>Move the files inside cinput.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv<span class="w"> </span>Si_01/*<span class="w"> </span>cinput/
+mv<span class="w"> </span>cinput/Si.input<span class="w"> </span>.
+
+ls<span class="w"> </span>cinput
+014_560.na1<span class="w">  </span>014_560.wf1<span class="w">  </span>014_640.na0<span class="w">  </span>014_640.na2<span class="w"> </span>...
+</pre></div>
+</div>
+<p>Check the input files.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>Si.input
+Si
+<span class="m">014</span>
+<span class="m">28</span>.09
+cinput/014.pp
+cinput/014_640.na0
+<span class="m">2</span>
+<span class="m">0</span>
+<span class="m">1</span>.00
+<span class="m">5</span>.60
+cinput/014_560.wf1
+cinput/014_560.na1
+<span class="m">1</span>
+<span class="m">3</span>.00
+<span class="m">6</span>.40
+cinput/014_640.wf2
+cinput/014_640.na2
+<span class="m">1</span>
+<span class="m">0</span>.5
+<span class="m">0</span>.25<span class="w"> </span><span class="m">0</span>.25<span class="w"> </span><span class="m">0</span>.25<span class="w"> </span><span class="m">0</span>.25<span class="w"> </span><span class="m">0</span>.25<span class="w"> </span><span class="m">0</span>.25
+</pre></div>
+</div>
+<p>We only want to obtain the interactions of one element</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>create.input
+<span class="w">  </span><span class="m">1</span><span class="w">                             </span><span class="nv">nspec</span><span class="o">=</span>Number<span class="w"> </span>of<span class="w"> </span>species
+<span class="w">  </span>Si.input
+</pre></div>
+</div>
+<p>We run create</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./create.com
+</pre></div>
+</div>
+<p>And we obtain the interactions.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ls<span class="w"> </span>coutput/
+bcna_01_00.14.14.14.dat<span class="w">  </span>den3_02_01.14.14.14.dat<span class="w">  </span>...
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="fireball_amber.html"
+                          title="previous chapter">Fireball &amp; Amber</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="begin.html"
+                          title="next chapter">Begin</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/create.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="begin.html" title="Begin"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fireball_amber.html" title="Fireball &amp; Amber"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Create</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, dgtrabada.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    </div>
+  </body>
+</html>

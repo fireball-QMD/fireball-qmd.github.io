@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Begin &#8212; fireball-qmd GPLv3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=8fc2db88" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=79a2284a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Create" href="create.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="create.html" title="Create"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Begin</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="begin">
+<h1>Begin<a class="headerlink" href="#begin" title="Permalink to this heading">¶</a></h1>
+<p>We can get the code from:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/fireball-QMD/begin
+</pre></div>
+</div>
+<p>We compile to obtain initial.x</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>begin/begin
+$<span class="w"> </span>ls
+begin.f90<span class="w">    </span>glean.f90<span class="w">    </span>initial_looprc.f90<span class="w"> </span>...
+$<span class="w"> </span>make
+
+Copy<span class="w"> </span>the<span class="w"> </span>pseudopotential,<span class="w"> </span>we<span class="w"> </span>use<span class="w"> </span>Silicon<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>example.
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>cp<span class="w"> </span>../PPfiles/3/014.pp<span class="w"> </span>.
+</pre></div>
+</div>
+<p>And run initial.x</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./initial.x
+
+<span class="w">                        </span>Fireball2000
+<span class="w">           </span>*------------------------------------*
+<span class="w">           </span><span class="p">|</span><span class="w">     </span>THIS<span class="w"> </span>CODE<span class="w"> </span>IS<span class="w"> </span>PROPRIETORY,<span class="w">      </span><span class="p">|</span>
+<span class="w">           </span><span class="p">|</span><span class="w">      </span>SEE<span class="w"> </span>COPYRIGHT<span class="w"> </span>INFORMATION!<span class="w">    </span><span class="p">|</span>
+<span class="w">           </span>*------------------------------------*
+
+<span class="w">              </span>Usable<span class="w"> </span>only<span class="w"> </span>with<span class="w"> </span>permission<span class="w"> </span>from
+<span class="w">            </span>the<span class="w"> </span>Fireball2004<span class="w"> </span>executive<span class="w"> </span>committee.
+<span class="w">         </span>This<span class="w"> </span>program<span class="w"> </span>is<span class="w"> </span>NOT,<span class="w"> </span>under<span class="w"> </span>ANY<span class="w"> </span>circumstances,
+<span class="w">           </span>to<span class="w"> </span>be<span class="w"> </span>transfered<span class="w"> </span>to<span class="w"> </span>an<span class="w"> </span>unauthorized<span class="w"> </span>user!
+
+<span class="w">                        </span>Fireball2000
+
+<span class="w">     </span>*-------------------------------------------------*
+<span class="w">     </span><span class="p">|</span><span class="w">                                                 </span><span class="p">|</span>
+<span class="w">     </span><span class="p">|</span><span class="w">                    </span>Welcome.<span class="w">                     </span><span class="p">|</span>
+<span class="w">     </span><span class="p">|</span><span class="w">       </span>The<span class="w"> </span>Fireball2004<span class="w"> </span>team<span class="w"> </span>welcomes<span class="w"> </span>you.<span class="w">       </span><span class="p">|</span>
+<span class="w">     </span><span class="p">|</span><span class="w">                                                 </span><span class="p">|</span>
+<span class="w">     </span>*-------------------------------------------------*
+
+<span class="w">  </span>This<span class="w"> </span>program<span class="w"> </span>helps<span class="w"> </span>you<span class="w"> </span>to<span class="w"> </span>initialize<span class="w"> </span>the<span class="w"> </span><span class="s2">&quot;begin&quot;</span><span class="w"> </span>part
+<span class="w">  </span>of<span class="w"> </span>the<span class="w"> </span>Fireball2000<span class="w"> </span>�<span class="w"> </span>package.
+
+<span class="w">  </span>You<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>asked<span class="w"> </span><span class="m">4</span><span class="w"> </span>questions.<span class="w"> </span>Hit<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>defaults.
+
+<span class="w">  </span>Ready.
+<span class="w">            </span>Set.
+<span class="w">                     </span>Go.
+
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">===================</span>
+
+<span class="w">  </span>Which<span class="w"> </span>atom<span class="w"> </span>would<span class="w"> </span>you<span class="w"> </span>like<span class="w"> </span>to<span class="w"> </span>begin?<span class="w"> </span>Your<span class="w"> </span>choice:
+
+
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w">                                               </span><span class="p">|</span><span class="m">2</span><span class="w"> </span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>H<span class="w"> </span><span class="p">|</span><span class="w">                                               </span><span class="p">|</span>He<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w">                             </span><span class="p">|</span><span class="m">5</span><span class="w"> </span><span class="p">|</span><span class="m">6</span><span class="w"> </span><span class="p">|</span><span class="m">7</span><span class="w"> </span><span class="p">|</span><span class="m">8</span><span class="w"> </span><span class="p">|</span><span class="m">9</span><span class="w"> </span><span class="p">|</span><span class="m">10</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>Li<span class="p">|</span>Be<span class="p">|</span><span class="w">                             </span><span class="p">|</span>B<span class="w"> </span><span class="p">|</span>C<span class="w"> </span><span class="p">|</span>N<span class="w"> </span><span class="p">|</span>O<span class="w"> </span><span class="p">|</span>F<span class="w"> </span><span class="p">|</span>Ne<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">11</span><span class="p">|</span><span class="m">12</span><span class="p">|</span><span class="w">                             </span><span class="p">|</span><span class="m">13</span><span class="p">|</span><span class="m">14</span><span class="p">|</span><span class="m">15</span><span class="p">|</span><span class="m">16</span><span class="p">|</span><span class="m">17</span><span class="p">|</span><span class="m">18</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>Na<span class="p">|</span>Mg<span class="p">|</span><span class="w">                             </span><span class="p">|</span>Al<span class="p">|</span>Si<span class="p">|</span>P<span class="w"> </span><span class="p">|</span>S<span class="w"> </span><span class="p">|</span>Cl<span class="p">|</span>Ar<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">19</span><span class="p">|</span><span class="m">20</span><span class="p">|</span><span class="m">21</span><span class="p">|</span><span class="m">22</span><span class="p">|</span><span class="m">23</span><span class="p">|</span><span class="m">24</span><span class="p">|</span><span class="m">25</span><span class="p">|</span><span class="m">26</span><span class="p">|</span><span class="m">27</span><span class="p">|</span><span class="m">28</span><span class="p">|</span><span class="m">29</span><span class="p">|</span><span class="m">30</span><span class="p">|</span><span class="m">31</span><span class="p">|</span><span class="m">32</span><span class="p">|</span><span class="m">33</span><span class="p">|</span><span class="m">34</span><span class="p">|</span><span class="m">35</span><span class="p">|</span><span class="m">36</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>K<span class="w"> </span><span class="p">|</span>Ca<span class="p">|</span>Sc<span class="p">|</span>Ti<span class="p">|</span>V<span class="w"> </span><span class="p">|</span>Cr<span class="p">|</span>Mn<span class="p">|</span>Fe<span class="p">|</span>Co<span class="p">|</span>Ni<span class="p">|</span>Cu<span class="p">|</span>Zn<span class="p">|</span>Ga<span class="p">|</span>Ge<span class="p">|</span>As<span class="p">|</span>Se<span class="p">|</span>Br<span class="p">|</span>Kr<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">37</span><span class="p">|</span><span class="m">38</span><span class="p">|</span><span class="m">39</span><span class="p">|</span><span class="m">40</span><span class="p">|</span><span class="m">41</span><span class="p">|</span><span class="m">42</span><span class="p">|</span><span class="m">43</span><span class="p">|</span><span class="m">44</span><span class="p">|</span><span class="m">45</span><span class="p">|</span><span class="m">46</span><span class="p">|</span><span class="m">47</span><span class="p">|</span><span class="m">48</span><span class="p">|</span><span class="m">49</span><span class="p">|</span><span class="m">50</span><span class="p">|</span><span class="m">51</span><span class="p">|</span><span class="m">52</span><span class="p">|</span><span class="m">53</span><span class="p">|</span><span class="m">54</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>Rb<span class="p">|</span>Sr<span class="p">|</span>Y<span class="w"> </span><span class="p">|</span>Zr<span class="p">|</span>Nb<span class="p">|</span>Mo<span class="p">|</span>Tc<span class="p">|</span>Ru<span class="p">|</span>Rh<span class="p">|</span>Pd<span class="p">|</span>Ag<span class="p">|</span>Cd<span class="p">|</span>In<span class="p">|</span>Sn<span class="p">|</span>Sb<span class="p">|</span>Te<span class="p">|</span>I<span class="w"> </span><span class="p">|</span>Xe<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">55</span><span class="p">|</span><span class="m">56</span><span class="p">|</span><span class="m">57</span><span class="p">|</span><span class="m">72</span><span class="p">|</span><span class="m">73</span><span class="p">|</span><span class="m">74</span><span class="p">|</span><span class="m">75</span><span class="p">|</span><span class="m">76</span><span class="p">|</span><span class="m">77</span><span class="p">|</span><span class="m">78</span><span class="p">|</span><span class="m">79</span><span class="p">|</span><span class="m">80</span><span class="p">|</span><span class="m">81</span><span class="p">|</span><span class="m">82</span><span class="p">|</span><span class="m">83</span><span class="p">|</span><span class="m">84</span><span class="p">|</span><span class="m">85</span><span class="p">|</span><span class="m">86</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>Cs<span class="p">|</span>Ba<span class="p">|</span>La<span class="p">|</span>Hf<span class="p">|</span>Ta<span class="p">|</span>W<span class="w"> </span><span class="p">|</span>Re<span class="p">|</span>Os<span class="p">|</span>Ir<span class="p">|</span>Pt<span class="p">|</span>Au<span class="p">|</span>Hg<span class="p">|</span>Tl<span class="p">|</span>Pb<span class="p">|</span>Bi<span class="p">|</span>Po<span class="p">|</span>At<span class="p">|</span>Rn<span class="p">|</span>
+<span class="w">  </span>-------------------------------------------------------
+<span class="w">  </span><span class="p">|</span><span class="m">87</span><span class="p">|</span><span class="m">88</span><span class="p">|</span><span class="m">89</span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span>Fr<span class="p">|</span>Ra<span class="p">|</span>Ac<span class="p">|</span><span class="w">  </span>-------------------------------------------
+<span class="w">  </span>----------<span class="w">  </span><span class="p">|</span><span class="m">58</span><span class="p">|</span><span class="m">59</span><span class="p">|</span><span class="m">60</span><span class="p">|</span><span class="m">61</span><span class="p">|</span><span class="m">62</span><span class="p">|</span><span class="m">63</span><span class="p">|</span><span class="m">64</span><span class="p">|</span><span class="m">65</span><span class="p">|</span><span class="m">66</span><span class="p">|</span><span class="m">67</span><span class="p">|</span><span class="m">68</span><span class="p">|</span><span class="m">69</span><span class="p">|</span><span class="m">70</span><span class="p">|</span><span class="m">71</span><span class="p">|</span>
+<span class="w">              </span><span class="p">|</span>Ce<span class="p">|</span>Pr<span class="p">|</span>Nd<span class="p">|</span>Pm<span class="p">|</span>Sm<span class="p">|</span>Eu<span class="p">|</span>Gd<span class="p">|</span>Tb<span class="p">|</span>Dy<span class="p">|</span>Ho<span class="p">|</span>Er<span class="p">|</span>Tm<span class="p">|</span>Yb<span class="p">|</span>Lu<span class="p">|</span>
+<span class="w">              </span>-------------------------------------------
+<span class="w">              </span><span class="p">|</span><span class="m">90</span><span class="p">|</span><span class="m">91</span><span class="p">|</span><span class="m">92</span><span class="p">|</span><span class="m">83</span><span class="p">|</span><span class="m">94</span><span class="p">|</span>
+<span class="w">              </span><span class="p">|</span>Th<span class="p">|</span>Pa<span class="p">|</span>U<span class="w"> </span><span class="p">|</span>Np<span class="p">|</span>Pu<span class="p">|</span>
+<span class="w">              </span>----------------
+
+
+<span class="w">  </span><span class="o">===</span>&gt;<span class="w"> </span>Input<span class="w"> </span>desired<span class="w"> </span>atomic<span class="w"> </span>number:
+<span class="w">  </span><span class="m">14</span>
+<span class="w">  </span>Begin<span class="w"> </span>reading<span class="w"> </span>main<span class="w"> </span>data<span class="w"> </span><span class="k">in</span><span class="w"> </span>periodictable.input
+<span class="w">  </span>Your<span class="w"> </span>chosen<span class="w"> </span>element:<span class="w"> </span><span class="nv">Silicon</span>
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="o">===================</span>
+
+<span class="w">  </span>We<span class="w"> </span>suggest<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>electron<span class="w"> </span>configuration<span class="w"> </span><span class="o">(</span>This
+<span class="w">  </span>can<span class="w"> </span>of<span class="w"> </span>course<span class="w"> </span>change<span class="w"> </span>depending<span class="w"> </span>on<span class="w"> </span>your<span class="w"> </span>system.<span class="o">)</span>
+
+<span class="w">  </span>s^2.00<span class="w"> </span>p^2.00<span class="w"> </span>d^<span class="w"> </span><span class="m">0</span>.00<span class="w"> </span>f^<span class="w"> </span><span class="m">0</span>.00
+<span class="w">  </span>Which<span class="w"> </span>shells<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span><span class="o">(</span>insert<span class="w"> </span>corresponding<span class="w"> </span>letters<span class="o">)</span>:
+<span class="w">  </span><span class="o">[</span>s<span class="o">]</span><span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>s-shell
+<span class="w">  </span><span class="o">[</span>p<span class="o">]</span><span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>p-shell
+<span class="w">  </span><span class="o">[</span>d<span class="o">]</span><span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>d-shell
+<span class="w">  </span><span class="o">[</span>f<span class="o">]</span><span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>f-shell
+
+<span class="w">  </span>Use<span class="w"> </span>the<span class="w"> </span>default?<span class="w"> </span>Y/N
+Y
+
+<span class="w">  </span>OK:<span class="w"> </span>We<span class="w"> </span>USE<span class="w"> </span>the<span class="w"> </span>default:<span class="w"> </span><span class="k">case</span><span class="w"> </span><span class="nv">nssh</span><span class="w"> </span><span class="o">=</span><span class="w">            </span><span class="m">2</span>
+
+<span class="w">  </span>You<span class="w"> </span>have<span class="w"> </span>chosen<span class="w"> </span><span class="m">2</span><span class="w"> </span>shells
+<span class="w">  </span>You<span class="w"> </span>have<span class="w"> </span>chosen<span class="w"> </span>the<span class="w"> </span>s-shell
+<span class="w">  </span>You<span class="w"> </span>have<span class="w"> </span>chosen<span class="w"> </span>the<span class="w"> </span>p-shell
+
+
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">3</span><span class="w"> </span><span class="o">===================</span>
+
+
+<span class="w">  </span>Determine<span class="w"> </span>electronic<span class="w"> </span>configuration.
+<span class="w">  </span>Electronic<span class="w"> </span>configuration<span class="w"> </span><span class="o">(</span>fractionals<span class="w"> </span>possible<span class="o">)</span>.
+
+<span class="w">  </span>The<span class="w"> </span>ground<span class="w"> </span>state<span class="w"> </span><span class="o">(</span>default<span class="o">)</span><span class="w"> </span>atom<span class="w"> </span>is:
+
+<span class="w">  </span><span class="nv">S</span><span class="w"> </span><span class="o">==</span>&gt;<span class="w"> </span><span class="m">2</span>.0<span class="p">;</span><span class="w"> </span><span class="nv">P</span><span class="w"> </span><span class="o">==</span>&gt;<span class="w"> </span><span class="m">2</span>.0<span class="p">;</span><span class="w"> </span><span class="nv">D</span><span class="w"> </span><span class="o">==</span>&gt;<span class="w"> </span><span class="m">0</span>.0<span class="p">;</span><span class="w"> </span><span class="nv">F</span><span class="w"> </span><span class="o">==</span>&gt;<span class="w"> </span><span class="m">0</span>.0
+
+<span class="w">  </span>Use<span class="w"> </span>the<span class="w"> </span>default?<span class="w"> </span>Y/N
+Y
+
+<span class="w">  </span>OK:<span class="w"> </span>We<span class="w"> </span>USE<span class="w"> </span>the<span class="w"> </span>default.
+
+
+<span class="w"> </span>Electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>valence<span class="w"> </span>orbitals:
+<span class="w"> </span>1st<span class="w"> </span><span class="nv">shell</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="m">2</span>.0000<span class="w"> </span>2nd<span class="w"> </span><span class="nv">shell</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="m">2</span>.0000
+
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">4</span><span class="w"> </span><span class="o">===================</span>
+
+
+<span class="w">  </span>A<span class="w"> </span>Fireball�<span class="w"> </span>is<span class="w"> </span>an<span class="w"> </span>atomic<span class="w"> </span>orbital<span class="w"> </span>which<span class="w"> </span>is
+<span class="w">  </span>confined<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>sphere<span class="w"> </span>of<span class="w"> </span>radius<span class="w"> </span>rc,<span class="w"> </span>i.e.,<span class="w"> </span>the<span class="w"> </span>atomic
+<span class="w">  </span>Schrodinger<span class="w"> </span>equation<span class="w"> </span>is<span class="w"> </span>solved<span class="w"> </span>with<span class="w"> </span>an<span class="w"> </span>infinite
+<span class="w">  </span>potential<span class="w"> </span>step.<span class="w"> </span>We<span class="w"> </span>allow<span class="w"> </span>rc<span class="o">(</span><span class="nv">L</span><span class="o">=</span><span class="m">0</span><span class="o">)</span>,<span class="w"> </span>rc<span class="o">(</span><span class="nv">L</span><span class="o">=</span><span class="m">1</span><span class="o">)</span>,<span class="w"> </span>etc.<span class="w"> </span>to<span class="w"> </span>be
+<span class="w">  </span>different.<span class="w"> </span>For<span class="w"> </span>simplicity,<span class="w"> </span>you<span class="w"> </span>might<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>take<span class="w"> </span>them
+<span class="w">  </span>to<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>same.
+
+<span class="w">  </span>We<span class="w"> </span>recommend<span class="w"> </span>as<span class="w"> </span>Fireball�<span class="w"> </span>radii:
+
+<span class="w">      </span><span class="m">4</span>.800<span class="w">    </span><span class="m">5</span>.400<span class="w">    </span><span class="m">0</span>.000<span class="w">    </span><span class="m">0</span>.000
+
+<span class="w">  </span>Use<span class="w"> </span>the<span class="w"> </span>default?<span class="w"> </span>Y/N
+Y
+
+<span class="w">  </span>OK:<span class="w"> </span>We<span class="w"> </span>USE<span class="w"> </span>the<span class="w"> </span>default.
+
+<span class="w">  </span>The<span class="w"> </span>cutoff<span class="w"> </span>radii<span class="w"> </span>that<span class="w"> </span>you<span class="w"> </span>are<span class="w"> </span>using<span class="w"> </span>are:
+<span class="w">      </span><span class="m">4</span>.800<span class="w">    </span><span class="m">5</span>.400
+
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">5</span><span class="w"> </span><span class="o">===================</span>
+
+
+<span class="w">  </span>You<span class="w"> </span>have<span class="w"> </span>the<span class="w"> </span>option<span class="w"> </span>of<span class="w"> </span>doing<span class="w"> </span>an<span class="w"> </span>excited<span class="w"> </span>state.<span class="w"> </span>Do<span class="w"> </span>you
+<span class="w">  </span>to<span class="w"> </span>perform<span class="w"> </span>a<span class="w"> </span>calculation<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>excited<span class="w"> </span>state?<span class="w"> </span>Y/N
+<span class="nv">N</span>
+
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">6</span><span class="w"> </span><span class="o">===================</span>
+
+
+<span class="w">  </span>Which<span class="w"> </span>exchange-correlation<span class="w"> </span>functional<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to
+<span class="w">  </span>use?<span class="w"> </span>The<span class="w"> </span>standard<span class="w"> </span>one<span class="w"> </span>we<span class="w"> </span>have<span class="w"> </span>used<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>Ceperely-
+<span class="w">  </span>Alder<span class="w"> </span>form<span class="w"> </span>as<span class="w"> </span>parameterized<span class="w"> </span>by<span class="w"> </span>Perdew-Zunger
+<span class="w">  </span><span class="o">(</span><span class="nv">ioption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="o">)</span>.<span class="w"> </span>Here<span class="w"> </span>are<span class="w"> </span>the<span class="w"> </span>different<span class="w"> </span>options:
+
+
+<span class="w">  </span><span class="m">1</span><span class="w">   </span>LDA<span class="w">  </span>Wigner
+<span class="w">  </span><span class="m">2</span><span class="w">   </span>LDA<span class="w">  </span>Hedin/Lundqvist
+<span class="w">  </span><span class="m">3</span><span class="w">   </span>LDA<span class="w">  </span>Ceperley/Alder<span class="w"> </span>Perdew/Zunger<span class="w"> </span><span class="o">(</span><span class="m">1980</span><span class="o">)</span>
+<span class="w">  </span><span class="m">4</span><span class="w">   </span>GGA<span class="w">  </span>Perdew/Wang<span class="w"> </span><span class="o">(</span><span class="m">1991</span><span class="o">)</span>
+<span class="w">  </span><span class="m">5</span><span class="w">   </span>GGA<span class="w">  </span>Becke<span class="w"> </span><span class="o">(</span><span class="m">1988</span><span class="o">)</span><span class="w"> </span>X,<span class="w"> </span>Perdew<span class="w"> </span><span class="o">(</span><span class="m">1986</span><span class="o">)</span>
+<span class="w">  </span><span class="m">6</span><span class="w">   </span>GGA<span class="w">  </span>Perdew/Burke/Ernzerhof<span class="w"> </span><span class="o">(</span><span class="m">1996</span><span class="o">)</span>
+<span class="w">  </span><span class="m">7</span><span class="w">   </span>LDA<span class="w">  </span>Zhao/Parr
+<span class="w">  </span><span class="m">8</span><span class="w">   </span>LDA<span class="w">  </span>Ceperley/Alder<span class="w"> </span>Perdew/Wang<span class="w"> </span><span class="o">(</span><span class="m">1991</span><span class="o">)</span>
+<span class="w">  </span><span class="m">9</span><span class="w">   </span>GGA<span class="w">  </span>Becke<span class="w"> </span><span class="o">(</span><span class="m">1988</span><span class="o">)</span><span class="w"> </span>X,<span class="w"> </span>Lee/Yang/Parr<span class="w"> </span><span class="o">(</span><span class="m">1988</span><span class="o">)</span>
+<span class="w">  </span><span class="m">10</span><span class="w">  </span>GGA<span class="w">  </span>Perdew/Wang<span class="w"> </span><span class="o">(</span><span class="m">1991</span><span class="o">)</span><span class="w"> </span>X,<span class="w"> </span>Lee/Yang/Parr<span class="w"> </span><span class="o">(</span><span class="m">1988</span><span class="o">)</span>
+<span class="w">  </span><span class="m">11</span><span class="w">  </span>LSDA<span class="w"> </span>Vosko/Wilk/Nusair<span class="w"> </span><span class="o">(</span><span class="m">1980</span><span class="o">)</span>
+<span class="w">  </span><span class="m">12</span><span class="w">  </span>B3LYP<span class="w">  </span>mix<span class="w"> </span>exact<span class="w"> </span>exchange<span class="w"> </span>and<span class="w"> </span>BLYP
+
+<span class="w">  </span>Use<span class="w"> </span>the<span class="w"> </span>default?<span class="w"> </span>Y/N
+<span class="nv">Y</span>
+
+<span class="w">  </span><span class="o">===================</span><span class="w"> </span>Question<span class="w"> </span>No.<span class="w"> </span><span class="nv">6</span><span class="w"> </span><span class="o">===================</span>
+
+<span class="w">                      </span>Last<span class="w"> </span>question<span class="w"> </span>!
+
+<span class="w">  </span>There<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>posibility<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>additional<span class="w"> </span>confinement
+<span class="w">  </span>potential<span class="w"> </span>to<span class="w"> </span>get<span class="w"> </span>more<span class="w"> </span>localized<span class="w"> </span>w.f..
+<span class="w">  </span>The<span class="w"> </span>potential<span class="w"> </span>has<span class="w"> </span>a<span class="w"> </span>form:
+<span class="w">  </span><span class="k">for</span><span class="w"> </span>r<span class="w"> </span>&gt;<span class="w"> </span>r0<span class="w"> </span><span class="nv">V</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Vo<span class="w"> </span>*<span class="w"> </span>exp<span class="w"> </span>-<span class="o">((</span>rc-r0<span class="o">)</span>/<span class="o">(</span>r-r0<span class="o">))</span>/<span class="o">(</span>rc-r<span class="o">)</span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span>r<span class="w"> </span><span class="s2">&quot;&lt;&quot;</span><span class="w"> </span>r0<span class="w"> </span><span class="nv">V</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>.0
+<span class="w">  </span><span class="o">(</span>For<span class="w"> </span>more<span class="w"> </span>detail<span class="w"> </span>see<span class="w"> </span>e.g.<span class="w"> </span>PRB<span class="w"> </span><span class="m">64</span>,<span class="w"> </span><span class="m">235111</span><span class="w"> </span><span class="o">(</span><span class="m">2001</span><span class="o">))</span>.
+<span class="w">  </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>additional<span class="w"> </span>attraction<span class="w"> </span>potential<span class="w"> </span>to
+<span class="w">  </span>optimize<span class="w"> </span>basis<span class="w"> </span>set?<span class="w"> </span>Y/N
+N
+
+<span class="w">  </span>Now<span class="w"> </span>write<span class="w"> </span>data<span class="w"> </span>to<span class="w"> </span>begin_input.f90
+
+<span class="w">  </span>Thank<span class="w"> </span>you<span class="w"> </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>input.
+
+<span class="w">  </span>Now<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;make begin.x&quot;</span>,<span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s2">&quot;begin.x&quot;</span>.
+
+<span class="w">  </span>Be<span class="w"> </span>SURE<span class="w"> </span>and<span class="w"> </span><span class="nb">type</span><span class="w"> </span>make,<span class="w"> </span>since<span class="w"> </span>this<span class="w"> </span>program<span class="w"> </span>has
+<span class="w">  </span>generated<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>file<span class="w"> </span><span class="s2">&quot;begin_input.f&quot;</span><span class="w"> </span>which<span class="w"> </span>must<span class="w"> </span>be
+<span class="w">  </span>recompiled<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span><span class="nb">source</span><span class="w"> </span>code.
+</pre></div>
+</div>
+<p>Finaly compile begin.x and run it !</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>make<span class="w"> </span>begin.x
+$<span class="w"> </span>./begin.x
+</pre></div>
+</div>
+<p>You should obtain the wavefunction files:</p>
+<ul class="simple">
+<li><p>014_480.wf1</p></li>
+<li><p>014_540.wf2</p></li>
+</ul>
+<p>And the non-neutral atom potential files:</p>
+<ul class="simple">
+<li><p>014_540.na0</p></li>
+<li><p>014_480.na1</p></li>
+<li><p>014_540.na2</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/wf.png"><img alt="_images/wf.png" src="_images/wf.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/na.png"><img alt="_images/na.png" src="_images/na.png" style="width: 400px;" /></a>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="create.html"
+                          title="previous chapter">Create</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/begin.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="create.html" title="Create"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Begin</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, dgtrabada.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    </div>
+  </body>
+</html>
