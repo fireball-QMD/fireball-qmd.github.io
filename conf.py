@@ -28,4 +28,4 @@ html_theme = 'sphinx_nefertiti'
 html_theme = 'sphinx_rtd_theme'
 html_theme = 'nature'
 #html_logo = '_static/fondo.png'
-html_static_path = ['_static']
+html_static_path = ['docs/_static']
