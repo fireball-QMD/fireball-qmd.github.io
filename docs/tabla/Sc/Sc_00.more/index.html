@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Sc LDA NPA Scs150800p000800d050800</title>
+</head>
+<body>
+
+<h2>Sc</h2>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -47.76 eV/atom </b> in Fireball and <b>  -1283.3 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Sc.pbe-nsp-van.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> fcc </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Scs150800p000800d050800.dat>Fireball</a></p> <img src=ek_Scs150800p000800d050800.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Sc.pbe-nsp-van.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 8.0 (bohr), rp = 8.0 (bohr), rd = 8.0 (bohr), and was generate like  qs = 1.5,  qp = 0.0,  qd = 0.5, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <table class="w3-table w3-striped w3-border">
+  <caption>Other basis</caption>
+  <tr>
+    <th>Base</th>
+    <th>Functional</th>
+    <th>Projection method</th>
+    <th>Crystal structure</th>
+    <th>Lattice parameter (&#8491;) </th>
+    <th>Bulk modulus (GPa)</th>
+  </tr>
+  <tr>
+    <td><a href=Sc_LDA_NPA_00.tar.gz>Scs150800p000800d050800</a></td>
+    <td>LDA</td>
+    <td>Natural population analysis (NPA)</td>
+    <td>fcc</td>
+    <td>4.628</td>
+    <td>55</td>
+  </tr>
+   <tr>
+    <td><a href=Sc_LDA_Lowdin_00.tar.gz>Scs060650p000650d050650</a></td>
+    <td>LDA</td>
+    <td>L&ouml;wdin</td>
+    <td>fcc</td>
+    <td>4.626</td>
+    <td>53</td>
+  </tr>
+ <tr>
+    <td><a href=Sc_LDA_Mulliken_00.tar.gz>Scs060650p000650d050650</a></td>
+    <td>LDA</td>
+    <td>Mulliken dipole</td>
+    <td>fcc</td>
+    <td>4.623</td>
+    <td>52</td>
+  </tr>
+ <tr>
+    <td><a href=Sc_GGA_NPA_00.tar.gz>Scs200850p000400d100850</a></td>
+    <td>GGA</td>
+    <td>Natural population analysis (NPA)</td>
+    <td>fcc</td>
+    <td>4.620</td>
+    <td>60</td>
+  </tr>
+ <tr>
+    <td><a href=Sc_GGA_NPA_00.tar.gz>Scs200850p000350d090850</a></td>
+    <td>GGA</td>
+    <td>L&ouml;wdin</td>
+    <td>fcc</td>
+    <td>4.628</td>
+    <td>56</td>
+  </tr>
+ <tr>
+    <td><a href=Sc_GGA_Mulliken_00.tar.gz>Scs175850d100850</a></td>
+    <td>GGA</td>
+    <td>Mulliken dipole</td>
+    <td>fcc</td>
+    <td>4.631</td>
+    <td>52</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=021_Sc_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=021_Sc_LDA/021.pp>021.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=021_Sc_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=021_Sc_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=021_Sc_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=021_Sc_LDA/021.pp>021.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=021_Sc_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=021_Sc_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  

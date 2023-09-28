@@ -1,0 +1,102 @@
+#info ./psgen ncpp 22:56:07 oct 22 2019 dani
+
+fhi pseudopotential tool fhipp - version rev270603B
+
+               chemical symbol  Ta      
+                nuclear charge  73.00
+                  total charge   0.00
+         number of core states  12
+      number of valence states   2
+    exchange-correlation model   9  GGA X Becke C Lee/Yang/Parr             
+      scalar-relativistic mode
+        parameters radial mesh   563    1.024700  0.856164E-04
+
+       === all-electron atom ===
+
+<        n     l      occupation  eigenvalue(eV)
+
+<  1     1     0        2.0000       -67166.5091         -2468.3043
+<  2     2     0        2.0000       -11424.0463          -419.8227
+<  3     2     1        6.0000        -9986.9156          -367.0095
+<  4     3     0        2.0000        -2553.6188           -93.8430
+<  5     3     1        6.0000        -2127.1933           -78.1723
+<  6     4     0        2.0000         -480.8826           -17.6720
+<  7     3     2       10.0000        -1626.1381           -59.7590
+<  8     4     1        6.0000         -345.3032           -12.6896
+<  9     5     0        2.0000          -65.5930            -2.4105
+< 10     4     2       10.0000         -171.8312            -6.3146
+< 11     5     1        6.0000          -35.3183            -1.2979
+< 12     4     0       14.0000         -480.8826           -17.6720
+< 13     6     0        2.0000           -5.2571            -0.1932
+< 14     5     2        3.0000           -3.3228            -0.1221
+
+                                  (Hartree a.u.)
+                  total energy      -15865.52921
+                kinetic energy       17465.01329
+                orbital energy       -9668.01710
+                coulomb energy      -39301.54853
+                hartree energy        6296.83330
+   exchange-correlation energy        -325.82727
+           xc potential energy        -425.14846
+          number of iterations                23   convergence  0.0E+00
+           core kinetic energy       17451.77683
+           core orbital energy       -9667.26439
+         core potential energy      -27119.04122
+            integrated density          73.00000
+  ... 1st derivative test 1 =            1.00000
+  ... 2nd derivative test 1 =            1.00000
+ 
+ fhipp - all-electron atom done
+
+    === HAMANN mode ===   h     
+
+  l  n     radius:     node      peak       default core
+x 0  6                1.379      2.797      1.678
+x 1  6                0.000      0.000      2.263
+x 2  5                0.696      1.717      1.030
+
+    === pseudo atom ===
+
+  l  type  rcore       rmatch          eigenvalue(eV)      norm test   slope test
+                                 all-electron     pseudo     1 =         1 =
+  0  h     1.6758507   4.2355645  -5.2570760  -5.2570761   1.0000000   1.0000020
+  1  h     2.2459297   5.4060326  -3.3227662  -3.3227662   1.0000000   1.0000000
+  2  h     1.0287281   2.7300465  -3.3227662  -3.3227662   1.0000000   1.0000049
+ 
+  --- linearized core-valence XC ---
+        c-v equidensity radius           2.08740
+
+                                  (Hartree a.u.)
+                  total energy          -4.44338
+                kinetic energy           3.67325
+              potential energy         -11.00000
+                hartree energy           4.01783
+                     xc energy          -1.13446
+                      c energy          -0.09428
+    integrated valence density           5.00000
+   ... 1st derivative test 1 =           1.00000
+   ... 2nd derivative test 1 =           1.00000
+    coulomb tail beyond radius           3.484     (tolerance  1.0E-03)
+                  y range plot        -6   2   2
+ 
+ fhipp - done for input @
+ 
+@ 73.00 12  2  9 0.00E+00 : z nc nv iexc rnlc
+@     1  0   2.00         : n l f
+@     2  0   2.00
+@     2  1   6.00
+@     3  0   2.00
+@     3  1   6.00
+@     4  0   2.00
+@     3  2  10.00
+@     4  1   6.00
+@     5  0   2.00
+@     4  2  10.00
+@     5  1   6.00
+@     4  0  14.00
+@     6  0   2.00
+@     5  2   3.00
+@ 2  h                   : ltmx spptype
+@ 1   1.68  -.53E+01  h
+@ 2   2.25  -.33E+01  h
+@ 3   1.03  -.33E+01  h

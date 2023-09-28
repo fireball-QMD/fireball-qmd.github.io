@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Ni LDA NPA Nis190600p000600d680600</title>
+</head>
+<body>
+
+<h2>Ni</h2>
+<p><b> Functional :</b> LDA Ceperley/Alder Perdew/Zunger (1980)</p>
+<p> <b> Projection : </b>Mulliken dipole</p>
+
+   
+
+<p> Calculation the <b> bulk modulus</b> obtained by fitting to the Murnaghan equation.
+The energy is plotted relative to the minimum energy for each case,<b>  -1043.11 eV/atom </b> in Fireball and <b>  -1368.36 eV/atom </b>  for Quantum espresso using the pseudopotentials <a href="https://www.quantum-espresso.org/pseudopotentials"> Ni.pbe-n-rrkjus_psl.0.1.UPF </a>. 
+a<sub>0</sub> and B<sub>0</sub> are the equilibrium lattice constant and bulk modulus obtained by fitting to the Murnaghan equation of state. 
+</p>
+<img src="bulk.png" alt="bulk.png"> 
+<p>
+     
+
+Calculation the band dispersion for the <b> fcc </b> structure with the lattice constant of 4.5 &#8491; 
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th><p><a href=ek_Nis190600p000600d680600.dat>Fireball</a></p> <img src=ek_Nis190600p000600d680600.png alt="bandas for Fireball"> </th>
+   <th><p>Quamtum espresso</p> <img src=ek0_Ni.pbe-n-rrkjus_psl.0.1.UPF.png alt=bandas for Quamtum espresso"> </th>
+  </tr>
+</table>
+
+<hr />
+<p>
+The cut off radio of the orbitals in Fireball are   rs = 6.0 (bohr), rp = 6.0 (bohr), rd = 6.0 (bohr), and was generate like  qs = 1.9,  qp = 0.0,  qd = 6.8, .
+</p>
+
+<img src="wf.png" alt="wf.png"> 
+
+   
+<hr />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <table class="w3-table w3-striped w3-border">
+  <caption>Other basis</caption>
+  <tr>
+    <th>Base</th>
+    <th>Functional</th>
+    <th>Projection method</th>
+    <th>Crystal structure</th>
+    <th>Lattice parameter (&#8491;) </th>
+    <th>Bulk modulus (GPa)</th>
+  </tr>
+  <tr>
+    <td><a href=Ni_LDA_NPA_00.tar.gz>Nis190600p000600d680600</a></td>
+    <td>LDA</td>
+    <td>Natural population analysis (NPA)</td>
+    <td>fcc</td>
+    <td>3.513</td>
+    <td>208</td>
+  </tr>
+   <tr>
+    <td><a href=Ni_LDA_Lowdin_00.tar.gz>Nis175650p000650d690650</a></td>
+    <td>LDA</td>
+    <td>L&ouml;wdin</td>
+    <td>fcc</td>
+    <td>3.524</td>
+    <td>189</td>
+  </tr>
+ <tr>
+    <td><a href=Ni_LDA_Mulliken_00.tar.gz>Nis200650p000650d675650</a></td>
+    <td>LDA</td>
+    <td>Mulliken dipole</td>
+    <td>fcc</td>
+    <td>3.528</td>
+    <td>198</td>
+  </tr>
+ <tr>
+    <td><a href=Ni_GGA_NPA_00.tar.gz>Nis000700p000700d770700</a></td>
+    <td>GGA</td>
+    <td>Natural population analysis (NPA)</td>
+    <td>fcc</td>
+    <td>3.533</td>
+    <td>281</td>
+  </tr>
+ <tr>
+    <td><a href=Ni_GGA_NPA_00.tar.gz>Nis000700p000700d750700</a></td>
+    <td>GGA</td>
+    <td>L&ouml;wdin</td>
+    <td>fcc</td>
+    <td>3.537</td>
+    <td>297</td>
+  </tr>
+ <tr>
+    <td><a href=Ni_GGA_Mulliken_00.tar.gz>Nis000700p000700d770700</a></td>
+    <td>GGA</td>
+    <td>Mulliken dipole</td>
+    <td>fcc</td>
+    <td>3.533</td>
+    <td>281</td>
+  </tr>
+
+
+
+</table>
+     
+<hr />
+<p> The LDA calculation is done with the <a href=028_Ni_LDA/ncpp.ini> ncpp file </a> to obtain  <a href=028_Ni_LDA/028.pp>028.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=028_Ni_LDA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=028_Ni_LDA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+
+<p> The GGA calculation is done with the <a href=028_Ni_GGA/ncpp.ini> ncpp file </a> to obtain  <a href=028_Ni_LDA/028.pp>028.pp</a> pseudopotential :
+<table style="width:100%">
+  <tr>
+    <th><img src=028_Ni_GGA/xv.ncpp.pspot_s.png alt=ncpp.psot> </th>
+    <th><img src=028_Ni_GGA/xv.ncpp.lder_sd.png alt=ncpp.psot> </th>
+  </tr>
+</table>
+
+</body>
+</html>  
+  
