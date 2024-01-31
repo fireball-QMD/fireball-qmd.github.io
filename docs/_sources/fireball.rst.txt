@@ -38,3 +38,16 @@ From here you can download some tested waves functions and pseudopotentials :
    :maxdepth: 1
    
    tabla.rst
+
+Fireball Committee
+------------------
+
+* James P. Lewis, Chinese Academy of Sciences, Taiyuan, China
+* Jose Ortega, Universidad de Madrid, Madrid, Spain
+* Pavel Jelinek, Institute of Physics of the Czech Academy of Sciences, Praga, Czech Republic
+* Jesús I. Mendieta Moreno, Instituto de Ciencias de Materiales de Madrid (CSIC), Madrid, Spain
+
+
+
+
+
