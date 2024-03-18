@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>PARAMETERS &#8212; fireball-qmd GPLv3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=8fc2db88" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=79a2284a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Begin" href="begin.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="begin.html" title="Begin"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PARAMETERS</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="parameters">
+<h1>PARAMETERS<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h1>
+<p>fireball.in parameters reference</p>
+<section id="option">
+<h2>OPTION<a class="headerlink" href="#option" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>fdatalocation</strong></div>
+<div class="line-block">
+<div class="line">Path to Fdata. Default is <em>‘./Fdata’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>basisfile</strong></div>
+<div class="line-block">
+<div class="line">Default is <em>‘input.bas’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>lvsfile</strong></div>
+<div class="line-block">
+<div class="line">Default is <em>‘input.lvs’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>kptpreference</strong></div>
+<div class="line-block">
+<div class="line">Default is <em>‘input.kpts’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>acfile</strong></div>
+<div class="line-block">
+<div class="line">Default is <em>‘ac.dat’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>xvfile</strong></div>
+<div class="line-block">
+<div class="line">Default is <em>‘xv.dat’</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iharris</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>idogs</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ihubbard</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ihorsfield</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>imcweda</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iks</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>igsn</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iquench</strong></div>
+<div class="line-block">
+<div class="line">Allows for free dynamics or quenching.</div>
+<div class="line"><strong>= 0</strong> Free dynamics.</div>
+<div class="line"><strong>= -1</strong> Dynamical quenching.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>icluster</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong> Periodic calculation.</div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>qstate</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>dt</strong></div>
+<div class="line-block">
+<div class="line">Time step in fs. Default is 0.5.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>nstepi</strong></div>
+<div class="line-block">
+<div class="line">Continue the simulation from the time step <em>nstepi</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>nstepf</strong></div>
+<div class="line-block">
+<div class="line">Final time step of the simulation. The number of time steps performed in the</div>
+<div class="line">simulation is <em>nstepf</em> - <em>nstepi</em>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>T_initial</strong></div>
+<div class="line-block">
+<div class="line">Initial “temperature” of the system in Kelvin. This option gives random</div>
+<div class="line">initial velocities to the atoms, according to a Boltzmann distribution for</div>
+<div class="line">that temperature.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>T_final</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iensemble</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong> NVE ensemble. Use this option for doiung quenching (<em>iquench = -1</em>).</div>
+<div class="line"><strong>= 1</strong> Use this option for constant temperature simulations.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>rescal</strong></div>
+<div class="line-block">
+<div class="line">Recalculates the <em>.bas</em>, <em>.lvs</em> and <em>.kpts</em> input files according to a</div>
+<div class="line">scaling factor. The coordinates of the <em>.bas</em> and <em>.lvs</em> files are</div>
+<div class="line">multiplied by this factor, while the coordinates for the kpoints of the</div>
+<div class="line"><em>.kpts</em> file are divided by this factor.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iqout</strong></div>
+<div class="line-block">
+<div class="line">Charge projection method. Default is</div>
+<div class="line"><strong>= 1</strong> Use</div>
+<div class="line"><strong>= 2</strong> Use</div>
+<div class="line"><strong>= 4</strong> Use Mulliken-Dipole charge projection</div>
+<div class="line"><strong>= 7</strong> Use Mulliken-Dipole-Preserving charge projection</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ifixcharge</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Use this option to fix the charges (no selfconsistency). The charges</div>
+<div class="line-block">
+<div class="line">are read from the CHARGES file, generated from a previous selfconsistent</div>
+<div class="line">calculation. This option is necessary when you are doing a band-structure</div>
+<div class="line">calculation.</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ifixneigh</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iumbrella</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ibarrier</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ivdw</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iimage</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>idynmat</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Calculate the dynamic matrx. It is also required a file named</div>
+<div class="line-block">
+<div class="line"><em>dyn.optional</em> with the following structure:</div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">0.02</span>                 <span class="n">displacement</span>
+<span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span>                <span class="n">dimensions</span> <span class="n">x</span> <span class="n">y</span> <span class="n">z</span><span class="p">:</span> <span class="mi">1</span><span class="o">=</span><span class="n">YES</span> <span class="mi">0</span><span class="o">=</span><span class="n">NO</span>
+<span class="n">filephi</span>              <span class="n">dynamic</span> <span class="n">matrix</span> <span class="n">output</span> <span class="n">filename</span>
+<span class="o">.</span><span class="n">false</span><span class="o">.</span>              <span class="n">read</span> <span class="n">the</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">atoms</span> <span class="n">that</span> <span class="n">move</span><span class="p">:</span> <span class="o">.</span><span class="n">false</span><span class="o">.</span> <span class="ow">or</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><strong>iharmonic</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iconstraints()</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iendtemp</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ineb</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>itrans</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>max_scf_iterations</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>bmix</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ialgmix</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>sigmatol</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>tempfe</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>itdse</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ibias</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>xyz2line</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>imdet</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>nddt</strong></div>
+</div>
+</section>
+<section id="output">
+<h2>OUTPUT<a class="headerlink" href="#output" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>iwrtxyz</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the <em>answer.xyz</em> file with the atomic coordinates during</div>
+<div class="line-block">
+<div class="line">the simulation.</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrteigen</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the <em>eigen.dat</em> file with the energy levels (eigenvalues)</div>
+<div class="line-block">
+<div class="line">at the end of the simulation. The eigenvalues are also written out in the</div>
+<div class="line">main output file in each time step.</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtefermi</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the information regarding the occupation of the energy</div>
+<div class="line-block">
+<div class="line">levels in the main output.</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtcdcoefs</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the coefficients of the wavefunctions C_i, mu.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtcharges</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtdensity</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the the density matrix in the main output.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtfpieces</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the pieces of the force.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrthampiece</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the pirces of the hamiltonian.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtcomponents</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtneigh</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtneigh_com</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtdos</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out DOS, dos.optional needed.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrthop</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtatom</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtpop</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtHS</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtvel</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtden</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtewf</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the wavefunction in .ppm (2D) or .xsf format (3D).</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtxsf</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the density and potential on a grid in .xsf format.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>idensimport</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtpsit</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtqt</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtdipole</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtexcit</strong></div>
+<div class="line-block">
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Writes out the optical transition matrix elements by Fermi Golden</div>
+<div class="line-block">
+<div class="line">rule.</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iwrtkvaziband</strong></div>
+<div class="line-block">
+<div class="line">Experimental, not finished!</div>
+<div class="line"><strong>= 0</strong></div>
+<div class="line"><strong>= 1</strong> Project the bandstructure of finite system using atomic orbitals.</div>
+</div>
+</div>
+</section>
+<section id="quench">
+<h2>QUENCH<a class="headerlink" href="#quench" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>energytol</strong></div>
+<div class="line-block">
+<div class="line">in eV</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>forcetol</strong></div>
+<div class="line-block">
+<div class="line">in eV/A</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>T_want</strong></div>
+<div class="line-block">
+<div class="line">in K</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>taurelax</strong></div>
+</div>
+</section>
+<section id="mesh">
+<h2>MESH<a class="headerlink" href="#mesh" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>Ecut</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>iewform</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>npbands</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ewfewin_min</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ewfewin_max</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>ifixg0</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>g0</strong></div>
+</div>
+</section>
+<section id="td">
+<h2>TD<a class="headerlink" href="#td" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><strong>netime</strong></div>
+<div class="line-block">
+<div class="line">Number of electron time steps within one MD step.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>nexcite</strong></div>
+<div class="line-block">
+<div class="line">Number of excitations.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>idelec</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>hoccup</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>eband</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>np2es</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>isp2es</strong></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">PARAMETERS</a><ul>
+<li><a class="reference internal" href="#option">OPTION</a></li>
+<li><a class="reference internal" href="#output">OUTPUT</a></li>
+<li><a class="reference internal" href="#quench">QUENCH</a></li>
+<li><a class="reference internal" href="#mesh">MESH</a></li>
+<li><a class="reference internal" href="#td">TD</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="begin.html"
+                          title="previous chapter">Begin</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/parameters.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="begin.html" title="Begin"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">fireball-qmd GPLv3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PARAMETERS</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, dgtrabada.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    </div>
+  </body>
+</html>

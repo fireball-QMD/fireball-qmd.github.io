@@ -11,9 +11,6 @@ Fireball–qmd (quantum molecular dynamics)
    fireball_amber.rst
    create.rst
    begin.rst
-   parameters.rst
-
-
 
 .. .. toctree::
 ..    :titlesonly:
