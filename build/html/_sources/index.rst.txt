@@ -11,8 +11,7 @@ Fireball–qmd (quantum molecular dynamics)
    fireball_amber.rst
    create.rst
    begin.rst
-   :caption: Recursos Externos:
-   `Fireballpy <https://fireball-qmd.github.io/fireballpy/html/tutorial/index.html#user-guide>`_
+   Fireballpy <https://fireball-qmd.github.io/fireballpy/html/tutorial/index.html#user-guide>_
 
 
 .. .. toctree::
