@@ -10,6 +10,7 @@ FIREBALL is a local-orbital DFT implementation of molecular dynamics. The method
 * `Wiki <https://nanosurf.fzu.cz/wiki/doku.php?id=fireball>`_
 * `Mulliken-dipole Charges <http://fireball.ftmc.uam.es:8060/polls/>`_
 * `Fireball parameters <https://fireball-qmd.github.io/parameters.html>`_
+* `Fireballpy <https://fireball-qmd.github.io/fireballpy/html/tutorial/index.html#user-guide>`_
 
 The recommended way to cite fireball:
 
