@@ -5,7 +5,7 @@ Fireball
 
 FIREBALL is a local-orbital DFT implementation of molecular dynamics. The method allows for the simulation and calculation of very large supercells of thousands of atoms or very long MD simulations with ease.
 
-* `Open course <https://fireball.ftmc.uam.es/moodle/course/view.php?id=2>`_ (guest access, tutorials, static executables, etc … )
+#* `Open course <https://fireball.ftmc.uam.es/moodle/course/view.php?id=2>`_ (guest access, tutorials, static executables, etc … )
 * `Source code (GPLv3) <https://github.com/fireball-QMD>`_ : git clone https://github.com/fireball-QMD/progs
 * `Wiki <https://nanosurf.fzu.cz/wiki/doku.php?id=fireball>`_
 * `Mulliken-dipole Charges <http://fireball.ftmc.uam.es:8060/polls/>`_

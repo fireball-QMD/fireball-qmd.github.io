@@ -15,4 +15,4 @@ do
     cd ..
   fi
 done
-
+rm -fr i
