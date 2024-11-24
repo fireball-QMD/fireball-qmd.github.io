@@ -1,5 +1,5 @@
 # fireball-qmd.github.io
-git clone https://github.com/fireball-QMD/fireball-qmd.github.io
+git clone git@github.com:fireball-QMD/fireball-qmd.github.io.git
 
 https://fireball-qmd.github.io/
 
