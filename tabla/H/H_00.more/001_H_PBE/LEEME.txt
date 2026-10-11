@@ -1,0 +1,8 @@
+El pseudopotencial del H es trivial: los 15 valores tabulados son cero, alpha=50,
+Rcutoff=0.2, y no depende del funcional. Por eso no se genera con builder.com
+(mk_pseudoFile.f:102 rechaza lmax <= 0) sino que se relabela, y por eso no hay
+ncpp.ini ni graficas de control, igual que en 001_H_GGA y 001_H_LDA.
+
+001++.pp es el pseudopotencial del ion, el que begin usa para las shells
+excitadas (la s' de las bases dobles). Difiere del normal en una sola linea:
+Z val = 3.00000, el del litio, puesto a mano para que la s' salga contraida.
